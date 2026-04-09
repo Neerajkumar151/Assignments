@@ -18,3 +18,10 @@ This README contains DAY 2 output screenshots in sequence as proof.
 
 ### 5. Output 5
 ![Output 5](./output5.png)
+
+## Single line commit image
+
+### Output Preview
+
+#### Output
+![Output](./output.png)

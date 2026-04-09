@@ -144,10 +144,3 @@ pie showData
 | 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 |  |  | TODO |  |  |
 | 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 |  |  | TODO |  |  |
 
-
-## Single line commit image
-
-### Output Preview
-
-#### Output
-![Output](./output.png)
