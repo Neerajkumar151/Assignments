@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey Learning HTML & CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: poppins, sans-serif;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+        }
+        .image-wrapper {
+            overflow: hidden; 
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper img:hover {
+            transform: scale(1.3);
+        }
+        .box{
+            width: auto;
+        }
+        #box1{
+            width: 35%;
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;  
+            align-items: center; 
+            background-color: black;
+            color: whitesmoke;
+        }
+        #box2{
+            width: 65%;
+        }
+        #box2 header{
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #box2 header div{
+            width: auto;
+        }
+        div{
+            border: none
+        }
+        a{
+            text-decoration: none;
+            color: rgb(75, 75, 151);
+        }
+        a:hover{
+            color: #ff4b2b;
+            padding-left: 5px;
+            text-decoration: underline;
+        } 
+        th{
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        td{
+            border: 1px solid #333;
+            padding: 8px;
+        }
+        h2{
+            padding-bottom: 10px
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        ul{
+            padding-left: 40px;
+            line-height: 1.7;
+        }
+        footer{
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">
+            <h1 style="text-align: center;">My Web Dev Diary</h1>
+            <p style="text-align: center;">Chronicles of a coder in the making</p>
+            <div class="image-wrapper">
+                <img src="https://imgs.search.brave.com/MB4XXTnep0nt2bwnljAM84dka_ji2DyASqn2T1TDPIU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9i/LnNvbG9sZWFybi5j/b20vYXNzZXRzL3do/YXRfeW91X3dpbGxf/bGVhcm5faWxsdXN0/cmF0aW9uLnBuZw" alt="coding-image" style="height: auto; width: 110%;">
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <header style="border: none; position: sticky; top: 10px; z-index: 10; background-color: #c5aa6a; height: 50px; border-radius: 30px; width: calc(100% - 40px); margin: 10px 20px 0 20px; box-sizing: border-box;">
+                <div><a href="#home">Home</a></div>
+                <div><a href="#about">About</a></div>
+                <div><a href="#contact">Contact</a></div>
+                <div><a href="#blog">Blog</a></div>
+            </header>
+
+            <section style="padding: 10px;" id="home">
+                <h2>1) Home</h2>
+                <h3>Welcome to My Web Development Journey</h3>
+
+                <p>
+                    This blog is a collection of my learning experiences as I explore the world
+                    of web development. Starting from HTML and CSS, I am building my foundation
+                    step by step.
+                </p>
+
+                <img style="display:block; width:60%; margin:40px auto;" src="https://www.raspberrypi.org/app/uploads/2022/01/48035309701_7a5bae0d61_k-500x333.jpg" alt="coding setup" width="100%">
+                <h3>What You Will Find Here</h3>
+                <ul>
+                    <li>Beginner-friendly HTML & CSS concepts</li>
+                    <li>My personal learning journey</li>
+                    <li>Small projects and experiments</li>
+                    <li>Useful resources and links</li>
+                </ul>
+
+                <h3 style="margin-top: 30px;">Why I Started This Blog</h3>
+                <p>
+                    I created this blog to document my progress and share my learning with others.
+                    It also helps me revise concepts and stay consistent in my journey.
+                </p>
+
+                <a title="link" href="https://developer.mozilla.org" target="_blank">
+                    Explore Web Development Resources
+                </a>
+            </section>
+
+            <section id="about" style="padding: 10px;">
+                <h2>2) About</h2>
+
+                <p>
+                    I am a beginner web developer documenting my learning journey from the ground up.
+                    This page is part of my hands-on practice, where I explore HTML, CSS, and real project structure.
+                </p>
+
+                <h3>Who I Am</h3>
+                <p>
+                    I enjoy building clean, simple, and meaningful web pages. My focus is to understand core concepts deeply
+                    before moving to advanced frameworks. Through this blog, I share what I learn, what challenges I face,
+                    and how I improve step by step.
+                </p>
+
+                <div class="img-box" style="text-align:center; margin:20px;">
+                    <div class="image-wrapper">
+                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Naepf3L0xG0zxD8SFPo7FA.jpeg"  alt="Developer working"  style="width:70%; border-radius:8px;"> <br>
+                    </div>
+                    <i style="margin-top: 10px;">Learning by building small projects every week.</i>
+                </div>
+
+                <h3>My Learning Roadmap</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 12px 0 20px 0;">
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>Focus Area</th>
+                            <th>Current Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phase 1</td>
+                            <td>HTML structure and semantic tags</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 2</td>
+                            <td>CSS layout, spacing, and typography</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 3</td>
+                            <td>Responsive design and media queries</td>
+                            <td>Upcoming</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 4</td>
+                            <td>JavaScript fundamentals</td>
+                            <td>Planned</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>What I Am Practicing Right Now</h3>
+                <ul>
+                    <li>Building proper heading hierarchy for readability and SEO</li>
+                    <li>Creating clean sections with meaningful content flow</li>
+                    <li>Using images, links, and tables in a structured way</li>
+                    <li>Improving consistency in spacing and alignment</li>
+                </ul>
+
+                <h3>Helpful Resources I Use</h3>
+                <p> I regularly refer to trusted documentation and tutorials to strengthen my fundamentals: </p>
+                <ul>
+                    <li><a title="MDN Web Docs" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> for HTML, CSS, and JavaScript reference</li>
+                    <li><a title="W3Schools" href="https://www.w3schools.com/" target="_blank">W3Schools</a> for quick practice examples</li>
+                    <li><a title="CSS-Tricks" href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> for practical CSS techniques</li>
+                </ul>
+                <p style="margin-top: 18px;"> My goal is simple: stay consistent, keep building, and become confident in creating complete web pages from scratch. </p>
+            </section>
+
+            <section id="blog" style="padding: 10px;">
+                <h2>3) Blog</h2>
+                <p>
+                    Here are a few short updates from my learning journey. I use this section to track progress,
+                    note key concepts, and reflect on what I build each week.
+                </p>
+
+                <article style="margin-top: 20px;">
+                    <p style="font-weight: 900; font-size: 18px;">Blog Post 1: My First Semantic Layout</p>
+                    <p><strong>Date:</strong> April 2026</p>
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Code editor on laptop screen" style="display:block; width:65%; max-width:600px; margin:15px auto; border-radius:8px;">
+                    </div>
+                    <p>
+                        I learned how to use semantic tags like section, article, header, and footer.
+                        Structuring content this way makes pages cleaner and easier to maintain.
+                    </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">
+                        Read more about Semantic HTML
+                    </a>
+                </article>
+
+                <article style="margin-top: 25px;">
+                    <p style="font-weight: 900; font-size: 18px;">Blog Post 2: Flexbox Helped My Layout</p  >
+                    <p><strong>Date:</strong> April 2026</p>
+                    <div class="image-wrapper">
+                        <img src="https://imgs.search.brave.com/jgzs-SkraK__3mx1luO2p_JTv-cpMUAhq2wVoDprBNE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMS8wMy9GQ0Mt/LTQtLnBuZw" alt="Developer workspace setup" style="display:block; width:65%; max-width:600px; margin:15px auto; border-radius:8px;">
+                    </div>
+                    <p>
+                        I practiced aligning elements in one row using Flexbox. It solved spacing and alignment
+                        issues in my header quickly and made the page look more organized.
+                    </p>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+                        Explore Flexbox Guide
+                    </a>
+                </article>
+            </section>
+
+            <section id="contact" style="padding: 10px;">
+                <h2>4) Contact</h2>
+                <p>
+                    Want to connect or share feedback? Send a message using the form below.
+                </p>
+
+                <p style="font-weight: 900; font-size: 18px;">Send Me a Message</p>
+                <form action="#" method="post" style="max-width: 600px; margin-top: 12px;">
+                    <label for="name">Full Name</label><br>
+                    <input id="name" name="name" type="text" placeholder="Enter your name"
+                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"><br>
+
+                    <label for="email">Email Address</label><br>
+                    <input id="email" name="email" type="email" placeholder="Enter your email"
+                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"><br>
+
+                    <label for="topic">Topic</label><br>
+                    <select style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;">
+                        <option>General Feedback</option>
+                        <option>Project Suggestion</option>
+                        <option>Learning Resources</option>
+                    </select><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message"
+                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"></textarea><br>
+
+                    <button disabled type="submit"
+                        style="padding:10px 18px; border:none; border-radius:6px; background:#c5aa6a; cursor:pointer;">
+                        Submit
+                    </button>
+                </form>
+
+                <h3>Other Ways to Reach Me</h3>
+                <ul>
+                    <li>Email: <a href="mailto:thakurneerajkumar17@gmail.com">thakurneerajkumar17@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/Neerajkumar151" target="_blank">GithHub link</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/neerajkumar1517/" target="_blank">LinkedIn link</a></li>
+                </ul>
+            </section> 
+        </div>
+    </div>
+    <div>
+        <footer style=" padding: 15px; text-align: center; background-color: #111; color: #f2f2f2;">
+        <p>&copy; 2026 My Web Dev Diary. All rights reserved.</p>
+        <p style="margin-top: 6px;">
+            Built with HTML and CSS while learning web development.
+        </p>
+        </footer>
+    </div>
+</body>
+</html>
