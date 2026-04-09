@@ -10,6 +10,9 @@
             padding: 0;
             font-family: poppins, sans-serif;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         #container{
             display: flex;
             justify-content: center;
@@ -21,15 +24,16 @@
         }
 
         .image-wrapper img {
-            width: 100%;
+            width: 60%;
             transition: transform 0.3s ease;
         }
 
         .image-wrapper img:hover {
             transform: scale(1.3);
         }
+
         .box{
-            width: auto;
+            width: max-content;
         }
         #box1{
             width: 35%;
@@ -43,14 +47,24 @@
         }
         #box2{
             width: 65%;
+            padding-left: 1vw;
         }
         #box2 header{
             display: flex;
-            gap: 16px;
             align-items: center;
             justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            border: none;
+            position: sticky;
+            top: 10px;
+            z-index: 10;
+            background-color: #c5aa6a;
+            height: 50px;
+            border-radius: 30px;
+            width: calc(100% - 40px);
+            margin: 10px 0 0 10px;
+            box-sizing: border-box;
         }
         #box2 header div{
             width: auto;
@@ -84,32 +98,121 @@
             margin-bottom: 15px;
         }
         ul{
-            padding-left: 40px;
+            padding-left: 3vw;
             line-height: 1.7;
         }
         footer{
             margin-top: 0;
+        }
+        section {
+            padding: 10px;
+            scroll-margin-top: 70px;
+        }
+        #box1 h1,
+        #box1 > p {
+            text-align: center;
+        }
+        #box1 .image-wrapper img {
+            height: auto;
+            width: 100%;
+        }
+        #home .image-wrapper img {
+            display: block;
+            width: 60%;
+            margin: 40px auto;
+        }
+        .section-subheading-gap {
+            margin-top: 30px;
+        }
+        .img-box {
+            text-align: center;
+            margin: 20px;
+        }
+        .about-image {
+            width: 60%;
+            border-radius: 8px;
+        }
+        .about-note {
+            margin-top: 10px;
+        }
+        .roadmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0 20px 0;
+        }
+        .goal-text {
+            margin-top: 18px;
+        }
+        .blog-entry-1 {
+            margin-top: 20px;
+        }
+        .blog-entry-2 {
+            margin-top: 25px;
+        }
+        .post-title,
+        .contact-title {
+            font-weight: 900;
+            font-size: 18px;
+        }
+        .blog-image {
+            display: block;
+            width: 65%;
+            max-width: 600px;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin-top: 12px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 0 0 14px 0;
+            border: 1px solid #999;
+            border-radius: 6px;
+        }
+        .submit-btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #c5aa6a;
+            cursor: pointer;
+        }
+        .site-footer {
+            padding: 15px;
+            text-align: center;
+            background-color: #111;
+            color: #f2f2f2;
+        }
+        .site-footer-note {
+            margin-top: 6px;
         }
     </style>
 </head>
 <body>
     <div id="container">
         <div class="box" id="box1">
-            <h1 style="text-align: center;">My Web Dev Diary</h1>
-            <p style="text-align: center;">Chronicles of a coder in the making</p>
+            <h1>My Web Dev Diary</h1>
+            <p>Chronicles of a coder in the making</p>
             <div class="image-wrapper">
-                <img src="https://imgs.search.brave.com/MB4XXTnep0nt2bwnljAM84dka_ji2DyASqn2T1TDPIU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9i/LnNvbG9sZWFybi5j/b20vYXNzZXRzL3do/YXRfeW91X3dpbGxf/bGVhcm5faWxsdXN0/cmF0aW9uLnBuZw" alt="coding-image" style="height: auto; width: 110%;">
+                <img src="https://imgs.search.brave.com/MB4XXTnep0nt2bwnljAM84dka_ji2DyASqn2T1TDPIU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9i/LnNvbG9sZWFybi5j/b20vYXNzZXRzL3do/YXRfeW91X3dpbGxf/bGVhcm5faWxsdXN0/cmF0aW9uLnBuZw" alt="coding-image">
             </div>
         </div>
         <div class="box" id="box2">
-            <header style="border: none; position: sticky; top: 10px; z-index: 10; background-color: #c5aa6a; height: 50px; border-radius: 30px; width: calc(100% - 40px); margin: 10px 20px 0 20px; box-sizing: border-box;">
+            <header>
                 <div><a href="#home">Home</a></div>
                 <div><a href="#about">About</a></div>
                 <div><a href="#contact">Contact</a></div>
                 <div><a href="#blog">Blog</a></div>
             </header>
 
-            <section style="padding: 10px;" id="home">
+            <section id="home">
                 <h2>1) Home</h2>
                 <h3>Welcome to My Web Development Journey</h3>
 
@@ -120,7 +223,7 @@
                 </p>
 
                 <div class="image-wrapper">
-                    <img style="display:block; width:60%; margin:40px auto;" src="https://www.raspberrypi.org/app/uploads/2022/01/48035309701_7a5bae0d61_k-500x333.jpg" alt="coding setup" width="100%">
+                    <img src="https://www.raspberrypi.org/app/uploads/2022/01/48035309701_7a5bae0d61_k-500x333.jpg" alt="coding setup" width="100%">
                 </div>
                 <h3>What You Will Find Here</h3>
                 <ul>
@@ -129,7 +232,7 @@
                     <li>Small projects and experiments</li>
                     <li>Useful resources and links</li>
                 </ul>
-                <h3 style="margin-top: 30px;">Why I Started This Blog</h3>
+                <h3 class="section-subheading-gap">Why I Started This Blog</h3>
                 <p>
                     I created this blog to document my progress and share my learning with others.
                     It also helps me revise concepts and stay consistent in my journey.
@@ -140,7 +243,7 @@
                 </a>
             </section>
 
-            <section id="about" style="padding: 10px;">
+            <section id="about">
                 <h2>2) About</h2>
 
                 <p>
@@ -155,15 +258,15 @@
                     and how I improve step by step.
                 </p>
 
-                <div class="img-box" style="text-align:center; margin:20px;">
+                <div class="img-box">
                     <div class="image-wrapper">
-                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Naepf3L0xG0zxD8SFPo7FA.jpeg"  alt="Developer working"  style="width:60%; border-radius:8px;"> <br>
+                        <img id="3-image" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Naepf3L0xG0zxD8SFPo7FA.jpeg"  alt="Developer working">
                     </div>
-                    <i style="margin-top: 10px;">Learning by building small projects every week.</i>
+                    <i class="about-note">Learning by building small projects every week.</i>
                 </div>
 
                 <h3>My Learning Roadmap</h3>
-                <table style="width: 100%; border-collapse: collapse; margin: 12px 0 20px 0;">
+                <table class="roadmap-table">
                     <thead>
                         <tr>
                             <th>Stage</th>
@@ -210,21 +313,21 @@
                     <li><a title="W3Schools" href="https://www.w3schools.com/" target="_blank">W3Schools</a> for quick practice examples</li>
                     <li><a title="CSS-Tricks" href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> for practical CSS techniques</li>
                 </ul>
-                <p style="margin-top: 18px;"> My goal is simple: stay consistent, keep building, and become confident in creating complete web pages from scratch. </p>
+                <p class="goal-text"> My goal is simple: stay consistent, keep building, and become confident in creating complete web pages from scratch. </p>
             </section>
 
-            <section id="blog" style="padding: 10px;">
+            <section id="blog">
                 <h2>3) Blog</h2>
                 <p>
                     Here are a few short updates from my learning journey. I use this section to track progress,
                     note key concepts, and reflect on what I build each week.
                 </p>
 
-                <article style="margin-top: 20px;">
-                    <p style="font-weight: 900; font-size: 18px;">Blog Post 1: My First Semantic Layout</p>
+                <article class="blog-entry-1">
+                    <h3 class="post-title">Blog Post 1: My First Semantic Layout</h3>
                     <p><strong>Date:</strong> April 2026</p>
                     <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Code editor on laptop screen" style="display:block; width:65%; max-width:600px; margin:15px auto; border-radius:8px;">
+                        <img class="blog-image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Code editor on laptop screen">
                     </div>
                     <p>
                         I learned how to use semantic tags like section, article, header, and footer.
@@ -235,11 +338,11 @@
                     </a>
                 </article>
 
-                <article style="margin-top: 25px;">
-                    <p style="font-weight: 900; font-size: 18px;">Blog Post 2: Flexbox Helped My Layout</p  >
+                <article class="blog-entry-2">
+                    <h3 class="post-title">Blog Post 2: Flexbox Helped My Layout</h3>
                     <p><strong>Date:</strong> April 2026</p>
                     <div class="image-wrapper">
-                        <img src="https://imgs.search.brave.com/jgzs-SkraK__3mx1luO2p_JTv-cpMUAhq2wVoDprBNE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMS8wMy9GQ0Mt/LTQtLnBuZw" alt="Developer workspace setup" style="display:block; width:65%; max-width:600px; margin:15px auto; border-radius:8px;">
+                        <img class="blog-image" src="https://imgs.search.brave.com/jgzs-SkraK__3mx1luO2p_JTv-cpMUAhq2wVoDprBNE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMS8wMy9GQ0Mt/LTQtLnBuZw" alt="Developer workspace setup">
                     </div>
                     <p>
                         I practiced aligning elements in one row using Flexbox. It solved spacing and alignment
@@ -251,35 +354,31 @@
                 </article>
             </section>
 
-            <section id="contact" style="padding: 10px;">
+            <section id="contact">
                 <h2>4) Contact</h2>
                 <p>
                     Want to connect or share feedback? Send a message using the form below.
                 </p>
 
-                <p style="font-weight: 900; font-size: 18px;">Send Me a Message</p>
-                <form action="#" method="post" style="max-width: 600px; margin-top: 12px;">
-                    <label for="name">Full Name</label><br>
-                    <input id="name" name="name" type="text" placeholder="Enter your name"
-                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"><br>
+                <p class="contact-title">Send Me a Message</p>
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name">
 
-                    <label for="email">Email Address</label><br>
-                    <input id="email" name="email" type="email" placeholder="Enter your email"
-                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"><br>
+                    <label for="email">Email Address</label>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email">
 
-                    <label for="topic">Topic</label><br>
-                    <select style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;">
+                    <label for="topic">Topic</label>
+                    <select class="form-control">
                         <option>General Feedback</option>
                         <option>Project Suggestion</option>
                         <option>Learning Resources</option>
-                    </select><br>
+                    </select>
 
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message"
-                        style="width:100%; padding:10px; margin:6px 0 14px 0; border:1px solid #999; border-radius:6px;"></textarea><br>
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message"></textarea>
 
-                    <button disabled type="submit"
-                        style="padding:10px 18px; border:none; border-radius:6px; background:#c5aa6a; cursor:pointer;">
+                    <button class="submit-btn" disabled type="submit">
                         Submit
                     </button>
                 </form>
@@ -294,9 +393,9 @@
         </div>
     </div>
     <div>
-        <footer style=" padding: 15px; text-align: center; background-color: #111; color: #f2f2f2;">
+        <footer class="site-footer">
         <p>&copy; 2026 My Web Dev Diary. All rights reserved.</p>
-        <p style="margin-top: 6px;">
+        <p class="site-footer-note">
             Built with HTML and CSS while learning web development.
         </p>
         </footer>
