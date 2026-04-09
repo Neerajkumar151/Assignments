@@ -9,13 +9,31 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 4
-- Pending items: 18
+- Completed items: 6
+- Pending items: 14
 - Current focus date: 2026-04-09
+
+## Progress Chart
+
+- Total tasks: 20
+- Completed: 6
+- Pending: 14
+- Completion: 30%
+
+```text
+Progress: [██████░░░░░░░░░░░░░░] 6/20 (30%)
+```
+
+```mermaid
+pie showData
+  title Assignment Progress (Out of 20)
+  "Completed" : 6
+  "Pending" : 14
+```
 
 ## Date-wise Task Plan
 
-### 2026-04-08
+### 2026-04-08 ✅
 
 - Topic 1: HTML Fundamentals
   - HTML Boilerplate, DOCTYPE, head/body, tags, attributes, nesting, indentation best practices
@@ -28,7 +46,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
     - Avoid outdated layout methods like float (this can nreak layout).
     - Maintain proper heading hierarchy.
 
-### 2026-04-09
+### 2026-04-09 ✅
 
 - Topic 2: Text and Media Elements
   - Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables
@@ -37,7 +55,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
   - Status: Done
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_2
 
-### 2026-04-10
+### 2026-04-10 ⏳
 
 - Topic 3: Forms (Real-world usage)
   - Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility
@@ -45,7 +63,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 3.1: Create a complete Registration Form with validations
   - Status: TODO
 
-### 2026-04-13
+### 2026-04-13 ⏳
 
 - Topic 4: Semantic HTML + SEO
   - Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics
@@ -53,7 +71,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 4.1: Refactor previous pages into semantic HTML + add SEO tags
   - Status: TODO
 
-### 2026-04-14
+### 2026-04-14 ⏳
 
 - Topic 5: CSS Fundamentals
   - CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border
@@ -61,7 +79,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 5.1: Style Resume Page with proper spacing, colors, typography
   - Status: TODO
 
-### 2026-04-15
+### 2026-04-15 ⏳
 
 - Topic 6: CSS Layout Basics
   - display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow
@@ -69,7 +87,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 6.1: Create a webpage with fixed header + scrollable content
   - Status: TODO
 
-### 2026-04-16
+### 2026-04-16 ⏳
 
 - Topic 7: Flexbox (Industry Must)
   - flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks
@@ -77,7 +95,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 7.1: Build responsive card layout (3-4 cards) using Flexbox
   - Status: TODO
 
-### 2026-04-17
+### 2026-04-17 ⏳
 
 - Topic 8: CSS Grid + Responsive Design
   - grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints
@@ -85,7 +103,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 8.1: Create a responsive dashboard layout using Grid + media queries
   - Status: TODO
 
-### 2026-04-20
+### 2026-04-20 ⏳
 
 - Topic 9: UI Components (Practical UI Dev)
   - Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes
@@ -93,7 +111,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 - Assignment 9.1: Build a Landing Page UI (Navbar + Hero + Cards + Footer)
   - Status: TODO
 
-### 2026-04-21
+### 2026-04-21 ⏳
 
 - Topic 10: Advanced CSS + Final Project
   - Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing
@@ -107,8 +125,8 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | HTML Fundamentals | HTML Boilerplate, DOCTYPE, head/body, tags, attributes, nesting, indentation best practices | 2026-04-08 | 2026-04-08 | 07-04-2026 | 07-04-2026 | Done |  |  |
 | 1.1 | HTML Fundamentals | Assignment: Create a Resume Webpage using proper HTML structure | 2026-04-08 | 2026-04-08 | 07-04-2026 | 08-04-2026 | Done | https://github.com/Neerajkumar151/Assignments | 1. Avoid duplicate CSS rules (a{} .a{}); 2. Avoid outdated layout methods like float (this can nreak layout); 3. Maintain proper heading hierarchy |
-| 2 | Text and Media Elements | Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables | 2026-04-09 | 2026-04-09 |  |  | TODO |  |  |
-| 2.1 | Text and Media Elements | Assignment: Build a Blog Page with images, links, and multiple sections | 2026-04-09 | 2026-04-09 |  |  | TODO |  |  |
+| 2 | Text and Media Elements | Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done |  |  |
+| 2.1 | Text and Media Elements | Assignment: Build a Blog Page with images, links, and multiple sections | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done |  |  |
 | 3 | Forms (Real-world usage) | Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility | 2026-04-10 | 2026-04-10 |  |  | TODO |  |  |
 | 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 |  |  | TODO |  |  |
 | 4 | Semantic HTML + SEO | Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics | 2026-04-13 | 2026-04-13 |  |  | TODO |  |  |
@@ -126,10 +144,3 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 | 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 |  |  | TODO |  |  |
 | 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 |  |  | TODO |  |  |
 
-## What To Do Next (Action Checklist)
-
-1. Complete Topic 2 (Text and Media Elements) on 2026-04-09.
-2. Build Assignment 2.1 (Blog Page) on 2026-04-09.
-3. Keep updating actual start/end dates after each task completion.
-4. After every assignment, add feedback in this README and apply improvements in the next task.
-5. For completed pages, ensure heading hierarchy is correct and avoid outdated float-based layouts.
