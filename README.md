@@ -38,7 +38,7 @@ pie showData
 - Topic 1: HTML Fundamentals
   - HTML Boilerplate, DOCTYPE, head/body, tags, attributes, nesting, indentation best practices
   - Status: Done
-- Assignment 1.1: Create a Resume Webpage using proper HTML structure
+- Assignment 1.1: Create a Resume Webpage using proper HTML structure.
   - Status: Done
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_1
   - Feedback:
@@ -51,7 +51,7 @@ pie showData
 - Topic 2: Text and Media Elements
   - Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables
   - Status: Done
-- Assignment 2.1: Build a Blog Page with images, links, and multiple sections
+- Assignment 2.1: Build a Blog Page with images, links, and multiple sections.
   - Status: Done
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_2
 
