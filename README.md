@@ -9,7 +9,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 2
+- Completed items: 4
 - Pending items: 18
 - Current focus date: 2026-04-09
 
@@ -22,7 +22,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
   - Status: Done
 - Assignment 1.1: Create a Resume Webpage using proper HTML structure
   - Status: Done
-  - Repo link: https://github.com/Neerajkumar151/Assignments
+  - Repo link: https://github.com/Neerajkumar151/Assignments/DAY_1/
   - Feedback:
     - Avoid duplicate CSS rules (a{} .a{}).
     - Avoid outdated layout methods like float (this can nreak layout).
@@ -32,9 +32,10 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 - Topic 2: Text and Media Elements
   - Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables
-  - Status: TODO
+  - Status: Done
 - Assignment 2.1: Build a Blog Page with images, links, and multiple sections
-  - Status: TODO
+  - Status: Done
+  - Repo link: https://github.com/Neerajkumar151/Assignments/DAY_2/
 
 ### 2026-04-10
 
