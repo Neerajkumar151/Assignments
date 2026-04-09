@@ -22,7 +22,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
   - Status: Done
 - Assignment 1.1: Create a Resume Webpage using proper HTML structure
   - Status: Done
-  - Repo link: https://github.com/Neerajkumar151/Assignments/DAY_1/
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_1
   - Feedback:
     - Avoid duplicate CSS rules (a{} .a{}).
     - Avoid outdated layout methods like float (this can nreak layout).
@@ -35,7 +35,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
   - Status: Done
 - Assignment 2.1: Build a Blog Page with images, links, and multiple sections
   - Status: Done
-  - Repo link: https://github.com/Neerajkumar151/Assignments/DAY_2/
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_2
 
 ### 2026-04-10
 
