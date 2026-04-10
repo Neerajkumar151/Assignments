@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        h1,h2{
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        #main{
+            padding: 40px;
+            display: flex;
+            background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/25348.jpg);
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 95% center;
+        }
+        form{
+            background: linear-gradient(to right, #ffffff, #b5c4c5);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), 0 6px 12px rgba(0, 0, 0, 0.18);
+            width: 35%;
+            /* height: 60%; */
+        }
+        #myForm{
+            margin-left: 50px;
+        }
+        label{
+            margin-top: 10px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+            font-size: 1.5rem;
+        }
+        input{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+        textarea{
+            width: 99%;
+            height: 6rem;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            resize: vertical;
+            border: 1px solid #ccc;
+        }
+        select{
+            width: 10.9rem;
+            padding: 9px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            text-align: center;
+            color: #333;
+        }
+        option{
+            color: #444;
+        }
+        .gender-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .gender-group input {
+            width: auto;
+            margin: 10px;
+            transform: scale(1.3);
+        }
+
+        fieldset {
+            margin: 0 0 20px;
+            padding: 16px 18px 18px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        legend {
+            padding: 0 8px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .label2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .label2 input {
+            width: auto;
+            margin: 0;
+            transform: scale(1.5);
+        }
+        
+        button{
+            width: 40%;
+            margin: 20px auto;
+            padding: 15px;
+            display: block;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover{
+            background-color: #21cb37;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), 0 6px 12px rgba(0, 0, 0, 0.18);
+        }
+    </style>
+</head>
+<body>
+    <h1>Validation Form :- Day 3 Assignment</h1>
+
+    <div id="main">
+        <form id="myForm">
+            <div>
+                <h2>Fill all the details here</h2>
+            </div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> 
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required> 
+
+            <label for="state">State:</label>
+            <select name="state" id="state" required>
+                <!-- States -->
+                 <option value="" selected disabled>Select State</option>
+                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal-pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya-pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west-bengal">West Bengal</option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+            </select>
+            
+            <label>Gender:</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male" required="">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required="">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="skills">Skills:</label>
+            <fieldset>
+                <legend>Choose your favourite skills:</legend>
+                <div id="container">
+                    <div class="label2">
+                        <input type="checkbox" name="html" />
+                        <label class="label" for="scales">HTML</label>
+                    </div>
+                    <div class="label2">
+                        <input type="checkbox" name="css" />
+                        <label class="label" for="horns">CSS</label>
+                    </div>
+
+                    <div class="label2">
+                        <input type="checkbox" name="javascript" />
+                        <label class="label" for="horns">JavaScript</label>
+                    </div>
+                    <div class="label2">
+                        <input type="checkbox" name="react" />
+                        <label class="label" for="horns">React</label>
+                    </div>
+                    <div class="label2">
+                        <input type="checkbox" name="python" />
+                        <label class="label" for="horns">Python</label>
+                    </div>
+                    <div class="label2">
+                        <input type="checkbox" name="c++" />
+                        <label class="label" for="horns">C++</label>
+                    </div>
+                    <div class="label2">
+                        <input type="checkbox" name="java" />
+                        <label class="label" for="horns">Java</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit number" id="phone" name="phone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" required>
+            <label for="feedback">Feedbacks:</label>
+            <textarea name="feedback" id="feedback" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
