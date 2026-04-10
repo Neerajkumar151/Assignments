@@ -67,6 +67,9 @@ pie showData
 - Assignment 3.1: Create a complete Registration Form with validations
   - Status: Done
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_3
+  - Feedback:
+    - 'name' attribute is missing in Password field.
+    - In Skills section checkbox, name structure is wrong and for attribute is not matching with any input.
 
 ### 2026-04-13 ⏳
 
@@ -133,7 +136,7 @@ pie showData
 | 2 | Text and Media Elements | Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done |  |
 | 2.1 | Text and Media Elements | Assignment: Build a Blog Page with images, links, and multiple sections | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done | 1. Replace p with headings in blog; 2. Remove br usage using CSS; 3. Wrong image width 110% |
 | 3 | Forms (Real-world usage) | Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done |  |
-| 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done | |
+| 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done | 1. 'name' attribute is missing in Password field; 2. In Skills section checkbox, name structure is wrong and for attribute is not matching with any input |
 | 4 | Semantic HTML + SEO | Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics | 2026-04-13 | 2026-04-13 |  |  | TODO |  |
 | 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 |  |  | TODO |  |
 | 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 |  |  | TODO |  |

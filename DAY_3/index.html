@@ -190,9 +190,9 @@
             
             <label>Gender:</label>
             <div class="gender-group">
-                <input type="radio" id="male" name="gender" value="male" required="">
+                <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" required="">
+                <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label>
             </div>
 
@@ -201,33 +201,38 @@
                 <legend>Choose your favourite skills:</legend>
                 <div id="container">
                     <div class="label2">
-                        <input type="checkbox" name="html" />
-                        <label class="label" for="scales">HTML</label>
-                    </div>
-                    <div class="label2">
-                        <input type="checkbox" name="css" />
-                        <label class="label" for="horns">CSS</label>
+                        <input type="checkbox" id="html" name="skills" value="html">
+                        <label class="label" for="html">HTML</label>
                     </div>
 
                     <div class="label2">
-                        <input type="checkbox" name="javascript" />
-                        <label class="label" for="horns">JavaScript</label>
+                        <input type="checkbox" id="css" name="skills" value="css">
+                        <label class="label" for="css">CSS</label>
                     </div>
+
                     <div class="label2">
-                        <input type="checkbox" name="react" />
-                        <label class="label" for="horns">React</label>
+                        <input type="checkbox" id="javascript" name="skills" value="javascript">
+                        <label class="label" for="javascript">JavaScript</label>
                     </div>
+
                     <div class="label2">
-                        <input type="checkbox" name="python" />
-                        <label class="label" for="horns">Python</label>
+                        <input type="checkbox" id="react" name="skills" value="react">
+                        <label class="label" for="react">React</label>
                     </div>
+
                     <div class="label2">
-                        <input type="checkbox" name="c++" />
-                        <label class="label" for="horns">C++</label>
+                        <input type="checkbox" id="python" name="skills" value="python">
+                        <label class="label" for="python">Python</label>
                     </div>
+
                     <div class="label2">
-                        <input type="checkbox" name="java" />
-                        <label class="label" for="horns">Java</label>
+                        <input type="checkbox" id="cpp" name="skills" value="c++">
+                        <label class="label" for="cpp">C++</label>
+                    </div>
+
+                    <div class="label2">
+                        <input type="checkbox" id="java" name="skills" value="java">
+                        <label class="label" for="java">Java</label>
                     </div>
                 </div>
             </fieldset>
@@ -239,7 +244,7 @@
             <input type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit number" id="phone" name="phone" required>
 
             <label for="password">Password:</label>
-            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" required>
+            <input type="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" required>
             <label for="feedback">Feedbacks:</label>
             <textarea name="feedback" id="feedback" required></textarea>
 
