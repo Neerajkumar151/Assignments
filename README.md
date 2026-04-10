@@ -11,7 +11,7 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 - Completed items: 6
 - Pending items: 14
-- Current focus date: 2026-04-09
+- Current focus date: 2026-04-10
 
 ## Progress Chart
 
@@ -59,13 +59,14 @@ pie showData
     - Remove br usage using CSS.
     - Wrong image width 110%.
 
-### 2026-04-10 ⏳
+### 2026-04-10 ✅
 
 - Topic 3: Forms (Real-world usage)
   - Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility
-  - Status: TODO
+  - Status: Done
 - Assignment 3.1: Create a complete Registration Form with validations
-  - Status: TODO
+  - Status: Done
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_3
 
 ### 2026-04-13 ⏳
 
@@ -131,8 +132,8 @@ pie showData
 | 1.1 | HTML Fundamentals | Assignment: Create a Resume Webpage using proper HTML structure | 2026-04-08 | 2026-04-08 | 08-04-2026 | 08-04-2026 | Done | 1. Avoid duplicate CSS rules (a{} .a{}); 2. Avoid outdated layout methods like float (this can nreak layout); 3. Maintain proper heading hierarchy |
 | 2 | Text and Media Elements | Headings, paragraphs, lists (ul/ol/dl), anchor tags, images, relative vs absolute paths, basic tables | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done |  |
 | 2.1 | Text and Media Elements | Assignment: Build a Blog Page with images, links, and multiple sections | 2026-04-09 | 2026-04-09 | 09-04-2026 | 09-04-2026 | Done | 1. Replace p with headings in blog; 2. Remove br usage using CSS; 3. Wrong image width 110% |
-| 3 | Forms (Real-world usage) | Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility | 2026-04-10 | 2026-04-10 |  |  | TODO |  |
-| 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 |  |  | TODO |  |
+| 3 | Forms (Real-world usage) | Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done |  |
+| 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done | Repo: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_3 |
 | 4 | Semantic HTML + SEO | Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics | 2026-04-13 | 2026-04-13 |  |  | TODO |  |
 | 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 |  |  | TODO |  |
 | 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 |  |  | TODO |  |
