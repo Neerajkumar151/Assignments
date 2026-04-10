@@ -239,7 +239,7 @@
             <input type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit number" id="phone" name="phone" required>
 
             <label for="password">Password:</label>
-            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" required>
+            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" required>
             <label for="feedback">Feedbacks:</label>
             <textarea name="feedback" id="feedback" required></textarea>
 
