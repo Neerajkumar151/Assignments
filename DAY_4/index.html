@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My journey learning HTML and CSS, sharing projects, progress and resources">
+    <title>My Journey Learning HTML & CSS</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: poppins, sans-serif;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #container{
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+        .image-wrapper {
+            overflow: hidden; 
+        }
+
+        aside{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            justify-content: center;
+            text-align: center;
+            background-color: #111;
+            color: whitesmoke;
+        }
+
+        #image-1{
+            width: 25vw;
+        }
+
+        .image-wrapper img {
+            width: 60%;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper img:hover {
+            transform: scale(1.3);
+        }
+
+        #box1{
+            width: 30%;
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;  
+            align-items: center; 
+            background-color: black;
+            color: whitesmoke;
+        }
+        
+        #box2{
+            width: 70%;
+            padding-top: 45px;
+        }
+
+        #box2 header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 30%;
+            width: 70%;
+            z-index: 1000;
+            background-color: #c5aa6a;
+            height: 50px;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+        
+        #box2 nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav a {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: whitesmoke;
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(75, 75, 151);
+        }
+        a:hover{
+            color: #ff4b2b;
+            text-decoration: underline;
+        } 
+        th{
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        td{
+            border: 1px solid #333;
+            padding: 8px;
+        }
+        h2{
+            padding-bottom: 10px
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        ul{
+            padding-left: 3vw;
+            line-height: 1.7;
+        }
+        footer{
+            margin-top: 0;
+        }
+        section {
+            padding: 10px;
+            scroll-margin-top: 50px;
+        }
+        #box1 h1,
+        #box1 > p {
+            text-align: center;
+        }
+        #box1 .image-wrapper img {
+            height: auto;
+            width: 100%;
+        }
+        #home .image-wrapper img {
+            display: block;
+            width: 60%;
+            margin: 40px auto;
+        }
+        .section-subheading-gap {
+            margin-top: 30px;
+        }
+        .img-box {
+            text-align: center;
+            margin: 20px;
+        }
+        .about-image {
+            width: 60%;
+            border-radius: 8px;
+        }
+        .about-note {
+            margin-top: 10px;
+        }
+        .roadmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0 20px 0;
+        }
+        .goal-text {
+            margin-top: 18px;
+        }
+        .blog-entry-1 {
+            margin-top: 20px;
+        }
+        .blog-entry-2 {
+            margin-top: 25px;
+        }
+        .post-title,
+        .contact-title {
+            font-weight: 900;
+            font-size: 18px;
+        }
+        .blog-image {
+            display: block;
+            width: 65%;
+            max-width: 600px;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+        .contact-form {
+            max-width: 35vw;
+            margin-top: 12px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 0 0 14px 0;
+            border: 1px solid #999;
+            border-radius: 6px;
+        }
+
+        #message{
+            line-height: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button{
+            padding: 10px;
+            background-color: #c5aa6a;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #695528;
+            color: white;
+            transition: transform 0.7s ease, background-color 0.7s ease;
+        }
+
+        .bot-container {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .floating-bot {
+            width: 300px;
+            animation: botLife 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .cloud-bubble {
+            position: absolute;
+            bottom: 300px;
+            right: 0;
+            background: #dbeafe;
+            color: #333;
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            animation: bubbleFloat 3s ease-in-out infinite;
+        }
+        .cloud-bubble span::after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            width: 16px;
+            height: 16px;
+            background: #dbeafe;
+            border-radius: 50%;
+        }
+
+        .cloud-bubble span {
+            position: relative;
+        }
+
+        .close-btn {
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #555;
+        }
+
+        @keyframes bubbleFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        @keyframes botLife {
+            0% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+
+            15% {
+                transform: translateY(-8px) rotate(1deg) scale(1.02);
+            }
+
+            30% {
+                transform: translateY(-15px) rotate(-1deg) scale(1.03);
+            }
+
+            45% {
+                transform: translateY(-12px) rotate(1deg) scale(1.02);
+            }
+
+            /* Blink */
+            48% {
+                transform: translateY(-12px) scaleY(1);
+            }
+
+            50% {
+                transform: translateY(-12px) scaleY(0.92);
+            }
+
+            52% {
+                transform: translateY(-12px) scaleY(1);
+            }
+
+            /* Wave feel */
+            60% {
+                transform: translateY(-10px) rotate(2deg);
+            }
+
+            70% {
+                transform: translateY(-10px) rotate(-2deg);
+            }
+
+            80% {
+                transform: translateY(-6px) rotate(1deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+        }
+
+        .bot-container::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 80px;
+            height: 12px;
+            background: rgba(0,0,0,0.25);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            animation: shadowMove 4s ease-in-out infinite;
+        }
+
+        @keyframes shadowMove {
+            0%, 100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translateX(-50%) scale(0.7);
+                opacity: 0.1;
+            }
+        }
+
+        footer {
+            background-color: #111;
+            color: #f2f2f2;
+            padding: 40px 20px;
+            font-family: Poppins, sans-serif;
+        }
+
+        .footer-container {
+            width: 90%;
+            margin: auto;
+            padding-right: 80px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            height: 30px;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .footer-columns div {
+            min-width: 150px;
+        }
+
+        .footer-columns h2 {
+            font-size: 14px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            color: #c5aa6a;
+        }
+
+        .footer-columns ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-columns li {
+            margin-bottom: 8px;
+        }
+
+        .footer-columns a {
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s ease;
+        }
+
+        .footer-columns a:hover {
+            color: #c5aa6a;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            color: #ccc;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-icons a:hover {
+            color: #c5aa6a;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <aside>
+            <h1>My Web Dev Diary</h1>
+            <p>Chronicles of a coder in the making</p>
+            <div class="image-wrapper">
+                <img id="image-1" src="https://imgs.search.brave.com/MB4XXTnep0nt2bwnljAM84dka_ji2DyASqn2T1TDPIU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9i/LnNvbG9sZWFybi5j/b20vYXNzZXRzL3do/YXRfeW91X3dpbGxf/bGVhcm5faWxsdXN0/cmF0aW9uLnBuZw" alt="coding-image">
+            </div>
+        </aside>
+        <main class="box" id="box2">
+            
+            <header>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#blog">Blog</a>
+                </nav>
+            </header>
+
+            <section id="home">
+                <h2>1) Home</h2>
+                <h3>Welcome to My Web Development Journey</h3>
+
+                <p>
+                    This blog is a collection of my learning experiences as I explore the world
+                    of web development. Starting from HTML and CSS, I am building my foundation
+                    step by step.
+                </p>
+
+                <div class="image-wrapper">
+                    <img src="https://www.raspberrypi.org/app/uploads/2022/01/48035309701_7a5bae0d61_k-500x333.jpg" alt="coding setup" width="100%">
+                </div>
+                <h3>What You Will Find Here</h3>
+                <ul>
+                    <li>Beginner-friendly HTML & CSS concepts</li>
+                    <li>My personal learning journey</li>
+                    <li>Small projects and experiments</li>
+                    <li>Useful resources and links</li>
+                </ul>
+                <h3 class="section-subheading-gap">Why I Started This Blog</h3>
+                <p>
+                    I created this blog to document my progress and share my learning with others.
+                    It also helps me revise concepts and stay consistent in my journey.
+                </p>
+
+                <a title="link" href="https://developer.mozilla.org" target="_blank">
+                    Explore Web Development Resources
+                </a>
+            </section>
+
+            <section id="about">
+                <h2>2) About</h2>
+
+                <p>
+                    I am a beginner web developer documenting my learning journey from the ground up.
+                    This page is part of my hands-on practice, where I explore HTML, CSS, and real project structure.
+                </p>
+
+                <h3>Who I Am</h3>
+                <p>
+                    I enjoy building clean, simple, and meaningful web pages. My focus is to understand core concepts deeply
+                    before moving to advanced frameworks. Through this blog, I share what I learn, what challenges I face,
+                    and how I improve step by step.
+                </p>
+
+                <div class="img-box">
+                    <div class="image-wrapper">
+                        <img id="3-image" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Naepf3L0xG0zxD8SFPo7FA.jpeg"  alt="Developer working">
+                    </div>
+                    <i class="about-note">Learning by building small projects every week.</i>
+                </div>
+
+                <h3>My Learning Roadmap</h3>
+                <table class="roadmap-table">
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>Focus Area</th>
+                            <th>Current Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phase 1</td>
+                            <td>HTML structure and semantic tags</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 2</td>
+                            <td>CSS layout, spacing, and typography</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 3</td>
+                            <td>Responsive design and media queries</td>
+                            <td>Upcoming</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 4</td>
+                            <td>JavaScript fundamentals</td>
+                            <td>Planned</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>What I Am Practicing Right Now</h3>
+                <ul>
+                    <li>Building proper heading hierarchy for readability and SEO</li>
+                    <li>Creating clean sections with meaningful content flow</li>
+                    <li>Using images, links, and tables in a structured way</li>
+                    <li>Improving consistency in spacing and alignment</li>
+                </ul>
+
+                <h3>Helpful Resources I Use</h3>
+                <p> I regularly refer to trusted documentation and tutorials to strengthen my fundamentals: </p>
+                <ul>
+                    <li><a title="MDN Web Docs" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> for HTML, CSS, and JavaScript reference</li>
+                    <li><a title="W3Schools" href="https://www.w3schools.com/" target="_blank">W3Schools</a> for quick practice examples</li>
+                    <li><a title="CSS-Tricks" href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> for practical CSS techniques</li>
+                </ul>
+                <p class="goal-text"> My goal is simple: stay consistent, keep building, and become confident in creating complete web pages from scratch. </p>
+            </section>
+
+            <section id="blog">
+                <h2>3) Blog</h2>
+                <p>
+                    Here are a few short updates from my learning journey. I use this section to track progress,
+                    note key concepts, and reflect on what I build each week.
+                </p>
+
+                <article class="blog-entry-1">
+                    <h3 class="post-title">Blog Post 1: My First Semantic Layout</h3>
+                    <p><strong>Date:</strong> April 2026</p>
+                    <div class="image-wrapper">
+                        <img class="blog-image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Code editor on laptop screen">
+                    </div>
+                    <p>
+                        I learned how to use semantic tags like section, article, header, and footer.
+                        Structuring content this way makes pages cleaner and easier to maintain.
+                    </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">
+                        Read more about Semantic HTML
+                    </a>
+                </article>
+
+                <article class="blog-entry-2">
+                    <h3 class="post-title">Blog Post 2: Flexbox Helped My Layout</h3>
+                    <p><strong>Date:</strong> April 2026</p>
+                    <div class="image-wrapper">
+                        <img class="blog-image" src="https://imgs.search.brave.com/jgzs-SkraK__3mx1luO2p_JTv-cpMUAhq2wVoDprBNE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWNvZGVjYW1w/Lm9yZy9uZXdzL2Nv/bnRlbnQvaW1hZ2Vz/L3NpemUvdzIwMDAv/MjAyMS8wMy9GQ0Mt/LTQtLnBuZw" alt="Developer workspace setup">
+                    </div>
+                    <p>
+                        I practiced aligning elements in one row using Flexbox. It solved spacing and alignment
+                        issues in my header quickly and made the page look more organized.
+                    </p>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+                        Explore Flexbox Guide
+                    </a>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>4) Contact</h2>
+                <p>
+                    Want to connect or share feedback? Send a message using the form below.
+                </p>
+
+                <p class="contact-title">Send Me a Message</p>
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name">
+
+                    <label for="email">Email Address</label>
+                    <input class="form-control" id="email" type="email" name="email" placeholder="Enter your Email" required>
+
+                    <label for="password">Password</label>
+                    <input class="form-control" id="password" type="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Must contain at least 8 characters, one uppercase, one lowercase, and one number" placeholder="Enter your Password" required>
+
+                    <label for="topic">Topic</label>
+                    <select required style="width: max-content;" id="topic" class="form-control">
+                        <option value="" selected disabled>Select option</option>
+                        <option value="general-feedback">General Feedback</option>
+                        <option value="project-suggestion">Project Suggestion</option>
+                        <option value="learning-resources">Learning Resources</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" required rows="5" placeholder="Write your message"></textarea>
+
+                    <button class="submit-btn" type="submit">
+                        Submit
+                    </button>
+                </form>
+
+                <h3>Other Ways to Reach Me</h3>
+                <ul>
+                    <li>Email: <a href="mailto:thakurneerajkumar17@gmail.com">thakurneerajkumar17@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/Neerajkumar151" target="_blank">GithHub link</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/neerajkumar1517/" target="_blank">LinkedIn link</a></li>
+                </ul>
+            </section> 
+            
+            <div class="bot-container">
+                <div class="cloud-bubble">
+                    Welcome to Neeraj's Web Dev Diary! 👋
+                </div>
+                <img src="bot.png" class="floating-bot" alt="bot">
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-top">
+
+                <div class="footer-logo">
+                    <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="bmw-logo">
+                    <span>Neeraj Kumar</span>
+                </div>
+
+                <div class="footer-columns">
+
+                    <div>
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="#">HTML Guide</a></li>
+                            <li><a href="#">CSS Tricks</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Follow</h2>
+                        <ul>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Legal</h2>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Neeraj Kumar. All rights reserved.</span>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
