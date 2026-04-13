@@ -71,7 +71,7 @@ pie showData
     - 'name' attribute is missing in Password field.
     - In Skills section checkbox, name structure is wrong and for attribute is not matching with any input.
 
-### 2026-04-13 ⏳
+### 2026-04-13 ✅
 
 - Topic 4: Semantic HTML + SEO
   - Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics
