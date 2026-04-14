@@ -9,26 +9,26 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 8
-- Pending items: 12
-- Current focus date: 2026-04-13
+- Completed items: 10
+- Pending items: 10
+- Current focus date: 2026-04-14
 
 ## Progress Chart
 
 - Total tasks: 20
-- Completed: 8
-- Pending: 12
-- Completion: 40%
+- Completed: 10
+- Pending: 10
+- Completion: 50%
 
 ```text
-Progress: [████████░░░░░░░░░░░░] 8/20 (40%)
+Progress: [██████████░░░░░░░░░░] 10/20 (50%)
 ```
 
 ```mermaid
 pie showData
   title Assignment Progress (Out of 20)
-  "Completed" : 8
-  "Pending" : 12
+  "Completed" : 10
+  "Pending" : 10
 ```
 
 ## Date-wise Task Plan
@@ -79,14 +79,17 @@ pie showData
 - Assignment 4.1: Refactor previous pages into semantic HTML + add SEO tags
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_4
+  - Feedback:
+    - Header placement issue rest are fine.
 
-### 2026-04-14 ⏳
+### 2026-04-14 ✅
 
 - Topic 5: CSS Fundamentals
   - CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border
-  - Status: TODO
+  - Status: DONE
 - Assignment 5.1: Style Resume Page with proper spacing, colors, typography
-  - Status: TODO
+  - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_5
 
 ### 2026-04-15 ⏳
 
@@ -139,9 +142,9 @@ pie showData
 | 3 | Forms (Real-world usage) | Form tag, input types, label, textarea, select, radio/checkbox, validation (required, pattern), basic accessibility | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done |  |
 | 3.1 | Forms (Real-world usage) | Assignment: Create a complete Registration Form with validations | 2026-04-10 | 2026-04-10 | 10-04-2026 | 10-04-2026 | Done | 1. 'name' attribute is missing in Password field; 2. In Skills section checkbox, name structure is wrong and for attribute is not matching with any input |
 | 4 | Semantic HTML + SEO | Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done |  |
-| 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done |  |
-| 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 |  |  | TODO |  |
-| 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 |  |  | TODO |  |
+| 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done | 1. Header placement issue rest are fine |
+| 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
+| 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
 | 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 |  |  | TODO |  |
 | 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 |  |  | TODO |  |
 | 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-16 | 2026-04-16 |  |  | TODO |  |
