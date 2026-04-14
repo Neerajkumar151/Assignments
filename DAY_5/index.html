@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day-5</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.34;
+            background-color: black;
+            background-image: url(https://images.unsplash.com/photo-1590978550433-6f1f533a3cd5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        h1{
+            color: black
+        }
+        
+        #container{
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 10px auto;
+            height: auto;
+            width: 50%;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), 0 6px 12px rgba(0, 0, 0, 0.18);
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .resume-intro {
+            flex: 1;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .contact-row p {
+            margin: 6px 0;
+        }
+
+        img{
+            width: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgba(16, 16, 68, 0.857);
+            margin-bottom: 2px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            color: #ff4b2b;
+            padding-left: 5px;
+        } 
+
+        hr {
+            border: none;       
+            height: 2px;   
+            background-color: black; 
+        }
+
+        .page-title {
+            text-align: center;
+        }
+
+        .page-subtitle {
+            text-align: center;
+        }
+
+        .name-title {
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="page-title">Resume</h1>
+    <p class="page-subtitle">Assignment 5 (Date: 14/04/2026) - Style Resume Page with proper spacing, colors, typography</p>
+    <div id="container">
+        <div class="resume-header">
+            <div class="resume-intro">
+                <h2 class="name-title">Neeraj Kumar</h2>
+                <div class="contact-row">
+                    <div>
+                        <p>Phone :- 8448275790</p>
+                        <p>Email :- thakurneerajkumar17@gmail.com</p>
+                    </div>
+                    <div>
+                        <p>Github :- <a href="https://github.com/Neerajkumar151">github.com</a></p>
+                        <p>LinkdIn :- <a href="https://www.linkedin.com/in/neerajkumar1517/">linkdin.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./neeraj.jpeg" alt="Profile-Photo">
+        </div>
+        <hr>
+        <h3>Summary</h3>
+
+        <p>
+            My name is <strong>Neeraj Kumar</strong>, and I am a final-year B.Tech student in 
+            Information Technology at G.L. Bajaj Institute of Technology and Management, Greater Noida. 
+            I have developed a strong interest in software development and problem-solving.
+        </p>
+
+        <p>
+            I am currently working as an <b>Associate Software Engineer (ASE)</b> Intern at <b>Codriva</b> Company, 
+            gaining hands-on experience in real-time projects and professional development practices.
+        </p>
+
+        <p>
+            I live in Sector 49, Barola, Noida, and I am passionate about building a successful 
+            career in the IT industry through continuous learning and hard work.
+        </p>
+
+        <hr>
+        <div id="skills_section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming languages :- C/C++, Python</li>
+                <li>Web Technolgies :- HTML, CSS, JavaScript, React</li>
+                <li>Database :- MYSql, MongoDB, Supabase</li>
+                <li>Tools :- Git, Github, VS Code, Antigravity, Claude</li>
+                <li>AI :- LLM, RAG, Prompt Engineering, Lovable, Bolt </li>
+
+            </ul>
+        </div>
+
+        <hr>
+        <h3>Projects</h3>
+        <ol>
+            <!-- Project 1 -->
+            <li>
+                <h4>KrishiSanjivni <span>(React, JavaScript, Supabase, Tailwind CSS)</span></h4>
+
+                <div class="project-meta">
+                    <p>
+                        <strong>Link:</strong> 
+                        <a href="https://www.krishisanjivni.me/" target="_blank">
+                            https://www.krishisanjivni.me/
+                        </a>
+                    </p>
+                    <p><strong>Duration:</strong> Aug 2024 - Oct 2024</p>
+                </div>
+
+                <ul>
+                    <li>Developed a smart farming web platform with services like crop assistance and equipment booking.</li>
+                    <li>Integrated a chatbot feature to help users with basic farming-related queries.</li>
+                    <li>Built an admin panel to manage users, services, and data records.</li>
+                </ul>
+            </li>
+
+            <!-- Project 2 -->
+            <li>
+                <h4>LoanPal <span>(React, JavaScript, Supabase, Tailwind CSS)</span></h4>
+
+                <div class="project-meta">
+                    <p>
+                        <strong>Link:</strong> 
+                        <a href="https://www.loanpalfin.tech/" target="_blank">
+                            https://www.loanpalfin.tech/
+                        </a>
+                    </p>
+                    <p><strong>Duration:</strong> Nov 2024 - Dec 2024</p>
+                </div>
+
+                <ul>
+                    <li>Built a loan application platform allowing users to apply and track loan status.</li>
+                    <li>Implemented simple eligibility logic and status updates using backend APIs.</li>
+                    <li>Generated downloadable loan documents and maintained application history.</li>
+                </ul>
+            </li>
+
+            <!-- Project 3 -->
+            <li>
+                <h4>GenieAI <span>(React, JavaScript, OpenAI API, Tailwind CSS)</span></h4>
+
+                <div class="project-meta">
+                    <p>
+                        <strong>Link:</strong> 
+                        <a href="https://genie-ai-wine.vercel.app/" target="_blank">
+                            https://genie-ai-wine.vercel.app/
+                        </a>
+                    </p>
+                    <p><strong>Duration:</strong> Mar 2025 - May 2025</p>
+                </div>
+
+                <ul>
+                    <li>Built a web application with AI features such as resume analysis and content generation.</li>
+                    <li>Integrated third-party APIs and handled user input, responses, and UI rendering.</li>
+                    <li>Implemented authentication and ensured smooth user experience across devices.</li>
+                </ul>
+            </li>
+        </ol>
+    <div>
+        <hr>
+        <h3>Achievements</h3>
+        <section>
+            <ul>
+                <li><strong>LeetCode:</strong> Solved 140+ DSA problems; peak rating 1680+.</li>
+                <li><strong>GeeksforGeeks:</strong> Solved 100+ problems; contest rating 2182.</li>
+                <li><strong>LeetCode Weekly Contest 468:</strong> Ranked 1756 globally.</li>
+                <li><strong>Smart India Hackathon:</strong> Cleared PPT round among 500+ teams.</li>
+            </ul>
+        </section>
+    </div>
+
+    <hr>
+    <div>
+        <h3>Certifications</h3>
+        <section>
+            <ul>
+                <li><strong>AWS</strong> Cloud Computing</li>
+                <li>CyberSecurity Essentials</li>
+                <li>Networking Fundamentals</li>
+            </ul>
+        </section>
+    </div>
+
+</div>
+
+</body>
+</html>
