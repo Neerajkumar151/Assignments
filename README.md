@@ -98,6 +98,7 @@ pie showData
   - Status: DONE
 - Assignment 6.1: Create a webpage with fixed header + scrollable content
   - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_6_7
 
 ### 2026-04-15 ✅
 
@@ -106,6 +107,7 @@ pie showData
   - Status: DONE
 - Assignment 7.1: Build responsive card layout (3-4 cards) using Flexbox
   - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_6_7
 
 ### 2026-04-16 ⏳
 
