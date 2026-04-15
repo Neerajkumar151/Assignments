@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Innovation Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-margin-top: 70px;
+        }
+
+        :root {
+            --font-primary: "Manrope", sans-serif;
+
+            --color-text-main: #eaf2fb;
+            --color-text-dark: #1e2a3a;
+            --color-highlight: #6db4ff;
+            --color-nav-link: #f5f8ff;
+
+            --color-button-primary-text: #f2fbf4;
+            --color-button-secondary-bg: #e8edf3;
+            --color-button-secondary-text: #2c3746;
+
+            --color-card-bg: #ced9e6;
+            --color-card-title: #202b38;
+            --color-card-subtitle: #5a6a7f;
+
+            --color-surface-top: #001025;
+            --color-surface-mid: #03243c;
+            --color-surface-bottom: #000715;
+
+            --color-overlay-soft: rgba(2, 14, 30, 0.58);
+            --color-overlay-strong: rgba(0, 7, 18, 0.86);
+            --color-glow: rgba(55, 167, 255, 0.22);
+
+            --color-service-surface: rgba(235, 241, 250, 0.92);
+            --color-service-border: rgba(74, 119, 171, 0.26);
+            --color-service-heading: #1f2d3d;
+            --color-service-text: #3d4f66;
+            --color-service-muted: #6b7d95;
+            --gradient-service-section: linear-gradient(180deg, rgba(6, 24, 46, 0.55) 0%, rgba(2, 15, 35, 0.75) 100%);
+
+            --gradient-page: radial-gradient(circle at 50% 30%, var(--color-surface-mid) 0%, var(--color-surface-top) 45%, var(--color-surface-bottom) 100%);
+            --gradient-header: linear-gradient(90deg, rgba(255, 255, 255, 0.88) 0%, rgba(225, 227, 228, 0.76) 45%, rgba(186, 195, 207, 0.88) 100%);
+            --gradient-button-primary: linear-gradient(135deg, #1e9b40 0%, #247e3a 100%);
+            --gradient-card-top-1: linear-gradient(135deg, #0c6cb6 0%, #0da3d7 100%);
+            --gradient-card-top-2: linear-gradient(135deg, #1f8ac3 0%, #2cc6d9 100%);
+            --gradient-card-top-3: linear-gradient(135deg, #4c87d8 0%, #3aa0ec 100%);
+            --gradient-card-top-4: linear-gradient(135deg, #5973c8 0%, #7ca8e8 100%);
+
+            --color-bubble-bg: #dbeafe;
+            --color-bubble-text: #333333;
+            --color-close-btn: #555555;
+            --color-black: #000000;
+
+            --gradient-footer: linear-gradient(90deg, rgba(0, 11, 31, 0.88) 0%, rgba(2, 34, 61, 0.76) 45%, rgba(0, 20, 45, 0.88) 100%);
+
+            --shadow-card: 0 16px 30px rgba(0, 0, 0, 0.24);
+            --shadow-button: 0 10px 24px rgba(21, 145, 63, 0.28);
+            --shadow-bubble: 0 6px 15px rgba(0, 0, 0, 0.1);
+            --shadow-bot: rgba(0, 0, 0, 0.25);
+
+            --radius-button: 10px;
+            --radius-card: 14px;
+            --radius-card-top: 14px 14px 0 0;
+            --card-width: 300px;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: var(--font-primary);
+            color: var(--color-text-main);
+            background: var(--gradient-page);
+            line-height: 1.45;
+            font-size: 1.5rem;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(var(--color-glow) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.22;
+            pointer-events: none;
+        }
+
+        .page {
+            min-height: 100vh;
+            background: linear-gradient(180deg, var(--color-overlay-soft) 0%, var(--color-overlay-strong) 100%);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 18px 34px;
+            background: var(--gradient-header);
+            z-index: 100;
+            backdrop-filter: blur(4px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-text-dark);
+            font-weight: 600;
+            font-size: 1.15rem;
+            letter-spacing: 0.2px;
+        }
+
+        main {
+            padding: 132px 20px 64px;
+        }
+
+        .hero {
+            max-width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            line-height: 1.08;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 span {
+            color: var(--color-highlight);
+        }
+
+        .hero p {
+            margin: 24px auto 0;
+            max-width: 720px;
+            color: var(--color-text-main);
+        }
+
+        .actions {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            border: 0;
+            padding: 12px 24px;
+            border-radius: var(--radius-button);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn.primary {
+            background: var(--gradient-button-primary);
+            color: var(--color-button-primary-text);
+            box-shadow: var(--shadow-button);
+        }
+
+        .btn.secondary {
+            background: var(--color-button-secondary-bg);
+            color: var(--color-button-secondary-text);
+        }
+
+        .cards {
+            margin: 54px auto 0;
+            max-width: max-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3em;
+        }
+
+        .card {
+            width: var(--card-width);
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .card:hover {
+            transform: scale(1.11);
+        }
+
+        .card-top {
+            height: 154px;
+            border-radius: var(--radius-card-top);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .card-1 .card-top {
+            background: var(--gradient-card-top-1);
+        }
+
+        .card-2 .card-top {
+            background: var(--gradient-card-top-2);
+        }
+
+        .card-3 .card-top {
+            background: var(--gradient-card-top-3);
+        }
+
+        .card-4 .card-top {
+            background: var(--gradient-card-top-4);
+        }
+
+        .card-content {
+            background: var(--color-card-bg);
+            color: var(--color-text-dark);
+            padding: 18px 18px 20px;
+            min-height: 230px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            line-height: 1.28;
+            color: var(--color-card-title);
+            margin-bottom: 6px;
+        }
+
+        .card-content p {
+            font-size: 1.1rem;
+            color: var(--color-card-subtitle);
+        }
+
+        .service-section {
+            margin: 80px auto 0;
+            max-width: 1500px;
+            padding: 42px 24px 50px;
+            border-radius: 18px;
+            background: var(--gradient-service-section);
+        }
+
+        .service-heading {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .service-heading h2 {
+            font-size: 3rem;
+            line-height: 1.15;
+            color: var(--color-text-main);
+        }
+
+        .service-heading h2 span {
+            color: var(--color-highlight);
+        }
+
+        .service-heading p {
+            margin: 12px auto 0;
+            max-width: 760px;
+            color: var(--color-text-main);
+            font-size: 1.2rem;
+            opacity: 0.88;
+        }
+
+        .service-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .service-card {
+            width: 360px;
+            border-radius: 14px;
+            padding: 22px 22px 20px;
+            background: var(--color-service-surface);
+            border: 1px solid var(--color-service-border);
+            box-shadow: var(--shadow-card);
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+        }
+
+        .service-card h3 {
+            color: var(--color-service-heading);
+            font-size: 1.45rem;
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--color-service-text);
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            color: var(--color-service-muted);
+            font-size: 1.1rem;
+            margin-bottom: 7px;
+        }
+
+        .service-list li::before {
+            content: "✓ ";
+            color: var(--color-highlight);
+            font-weight: 700;
+        }
+
+        .industry-section,
+        .contact-section {
+            margin: 80px auto 0;
+            max-width: 1500px;
+            padding: 42px 24px 50px;
+            border-radius: 18px;
+            background: var(--gradient-service-section);
+        }
+
+        .industry-heading,
+        .contact-heading {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .industry-heading h2,
+        .contact-heading h2 {
+            font-size: 3rem;
+            line-height: 1.15;
+            color: var(--color-text-main);
+        }
+
+        .industry-heading h2 span,
+        .contact-heading h2 span {
+            color: var(--color-highlight);
+        }
+
+        .industry-heading p {
+            margin: 12px auto 0;
+            max-width: 760px;
+            color: var(--color-text-main);
+            font-size: 1.3rem;
+            opacity: 0.88;
+        }
+
+        .contact-heading p {
+            margin: 12px auto 0;
+            max-width: 760px;
+            color: var(--color-text-main);
+            font-size: 1.3rem;
+            opacity: 0.88;
+        }
+
+        .industry-wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .industry-card,
+        .contact-card {
+            width: 400px;
+            height: 250px;
+            border-radius: 14px;
+            padding: 22px;
+            background: var(--color-service-surface);
+            border: 1px solid var(--color-service-border);
+            box-shadow: var(--shadow-card);
+            color: var(--color-service-heading);
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .industry-card:hover{
+            transform: translateY(-10px);
+        }
+
+        .contact-card {
+            height: 25rem;
+        }
+
+        .industry-card h3,
+        .contact-card h3 {
+            font-size: 1.6rem;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .industry-card p,
+        .contact-card p {
+            font-size: 1.2rem;
+            color: var(--color-service-text);
+        }
+
+        .contact-wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-card {
+            width: 100%;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            font-size: 1.2rem;
+            color: var(--color-service-text);
+            margin-bottom: 8px;
+        }
+
+        .contact-list li span {
+            font-weight: 700;
+            color: var(--color-service-heading);
+        }
+
+        .bot-container {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .floating-bot {
+            width: 300px;
+            animation: botLife 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .cloud-bubble {
+            position: absolute;
+            bottom: 300px;
+            right: 0;
+            background: var(--color-bubble-bg);
+            color: var(--color-bubble-text);
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            box-shadow: var(--shadow-bubble);
+            animation: bubbleFloat 3s ease-in-out infinite;
+        }
+
+        .cloud-bubble span::after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            width: 16px;
+            height: 16px;
+            background: var(--color-bubble-bg);
+            border-radius: 50%;
+        }
+
+        .cloud-bubble span {
+            position: relative;
+        }
+
+        .close-btn {
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--color-close-btn);
+        }
+
+        @keyframes bubbleFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        @keyframes botLife {
+            0% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+
+            15% {
+                transform: translateY(-8px) rotate(1deg) scale(1.02);
+            }
+
+            30% {
+                transform: translateY(-15px) rotate(-1deg) scale(1.03);
+            }
+
+            45% {
+                transform: translateY(-12px) rotate(1deg) scale(1.02);
+            }
+        }
+
+        .bot-container::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 80px;
+            height: 12px;
+            background: var(--shadow-bot);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            animation: shadowMove 4s ease-in-out infinite;
+        }
+
+        @keyframes shadowMove {
+            0%, 100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translateX(-50%) scale(0.7);
+                opacity: 0.1;
+            }
+        }
+
+        footer {
+            background: var(--gradient-footer);
+            color: var(--color-footer-text);
+            padding: 40px 20px;
+            font-family: var(--font-primary);
+        }
+
+        .footer-container {
+            width: 90%;
+            margin: auto;
+            padding-right: 80px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            height: 30px;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .footer-columns h2 {
+            font-size: 1.12rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            color: var(--color-highlight);
+        }
+
+        .footer-columns ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-columns li {
+            margin-bottom: 8px;
+        }
+
+        .footer-columns a {
+            color: var(--color-footer-link);
+            transition: color 0.3s ease;
+            font-size: 1.05rem;
+        }
+
+        .footer-columns a:hover {
+            color: var(--color-footer-accent);
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid var(--color-footer-border);
+            padding-top: 15px;
+            display: flex;
+            font-size: 1.4rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            color: var(--color-footer-link);
+            transition: transform 0.3s ease, color 0.3s ease;
+            font-size: 1.4rem;
+        }
+
+        .footer-icons a:hover {
+            color: var(--color-footer-accent);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <div id="home"><a href="#home-section">Home</a></div>
+                <div id="services"><a href="#service-section">Services</a></div>
+                <div id="industry"><a href="#industry-section">Industry</a></div>
+                <div id="contact"><a href="#contact-section">Contact</a></div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home-section" class="hero">
+                <h1>Transform your business with <span>digital innovation</span></h1>
+                <p>We deliver exceptional software solutions, digital transformation services, and technology consulting to help your business scale and succeed.</p>
+
+                <div class="actions">
+                    <button class="btn primary">Get a free Consultation</button>
+                    <button class="btn secondary">Our Expertise</button>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="card card-1">
+                    <div class="card-top" aria-hidden="true">💡</div>
+                    <div class="card-content">
+                        <h3>20+ Years Team Experience</h3>
+                        <p>Team Experience</p>
+                    </div>
+                </div>
+
+                <div class="card card-2">
+                    <div class="card-top" aria-hidden="true">🏙️</div>
+                    <div class="card-content">
+                        <h3>6+ Industries Served</h3>
+                        <p>Industries Served</p>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-top" aria-hidden="true">🚀</div>
+                    <div class="card-content">
+                        <h3>Fast-Growing Strong Engineering Culture</h3>
+                        <p>Strong Engineering Culture</p>
+                    </div>
+                </div>
+
+                <div class="card card-4">
+                    <div class="card-top" aria-hidden="true">⏱️</div>
+                    <div class="card-content">
+                        <h3>100% On Time Delivery Commitment</h3>
+                        <p>On Time Delivery</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service-section" class="service-section">
+                <div class="service-heading">
+                    <h2>Our <span>Services</span></h2>
+                    <p>We offer a comprehensive range of digital services to help your business thrive in the modern world.</p>
+                </div>
+
+                <div class="service-wrap">
+                    <div class="service-card">
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored solutions built from the ground up to meet your unique business needs.</p>
+                        <ul class="service-list">
+                            <li>Web Applications</li>
+                            <li>Mobile Apps</li>
+                            <li>API Development</li>
+                            <li>System Integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Mobile App Development</h3>
+                        <p>High-performance mobile applications built for usability, scalability, and engagement.</p>
+                        <ul class="service-list">
+                            <li>Native iOS and Android Apps</li>
+                            <li>Cross-platform Solutions</li>
+                            <li>UI/UX for Mobile</li>
+                            <li>App Store Deployment</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>API and System Integration</h3>
+                        <p>Seamless connectivity between tools and platforms to ensure optimized operations.</p>
+                        <ul class="service-list">
+                            <li>Third-party API Integration</li>
+                            <li>Custom API Development</li>
+                            <li>Legacy System Integration</li>
+                            <li>Workflow Automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>AI and Machine Learning</h3>
+                        <p>Intelligent solutions that automate processes and provide valuable insights.</p>
+                        <ul class="service-list">
+                            <li>Predictive Analytics</li>
+                            <li>NLP</li>
+                            <li>Computer Vision</li>
+                            <li>Automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Data Analytics</h3>
+                        <p>Transform raw data into actionable insights for better business decision making.</p>
+                        <ul class="service-list">
+                            <li>Data Visualization</li>
+                            <li>Business Intelligence</li>
+                            <li>Reporting</li>
+                            <li>Dashboards</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Support and Maintenance</h3>
+                        <p>Proactive support to keep your systems secure, updated, and performing.</p>
+                        <ul class="service-list">
+                            <li>Bug Fixes and Issue Resolution</li>
+                            <li>Performance Optimization</li>
+                            <li>Security Patching</li>
+                            <li>Continuous Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bot-container">
+                <div class="cloud-bubble">
+                    Hi Everyone! 👋
+                </div>
+                <img src="bot.png" class="floating-bot" alt="bot">
+            </div>
+
+            <section id="industry-section" class="industry-section">
+                <div class="industry-heading">
+                    <h2>Our <span>Industry</span></h2>
+                    <p>We build practical and scalable digital solutions across multiple domains.</p>
+                </div>
+
+                <div class="industry-wrap">
+                    <div class="industry-card">
+                        <h3>Healthcare</h3>
+                        <p>Patient-focused software and secure healthcare workflow tools.</p>
+                    </div>
+                    <div class="industry-card">
+                        <h3>Finance</h3>
+                        <p>Reliable systems for fintech, payments, and reporting.</p>
+                    </div>
+                    <div class="industry-card">
+                        <h3>Retail</h3>
+                        <p>Digital commerce solutions for better customer engagement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-section" class="contact-section">
+                <div class="contact-heading">
+                    <h2>Contact <span>Us</span></h2>
+                    <p>Reach out for consultation, support, and project discussions.</p>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <ul class="contact-list">
+                            <li><span>Email:</span> thakurneerajkumar17@gmail.com</li>
+                            <li><span>Phone:</span> +91 98765 43210</li>
+                            <li><span>Address:</span> Noida, India</li>
+                            <li><span>Feedback:</span></li>
+                            <form action="">
+                                <textarea style="display: block; padding: 10px; overflow: auto; line-height: 1.4rem; font-size: 1.1rem; width: 90%; margin: 0 auto;" name="message" id="message" rows="4" placeholder="Your Message"></textarea>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="bmw-logo">
+                        <span>Neeraj Kumar</span>
+                    </div>
+
+                    <div class="footer-columns">
+                        <div>
+                            <h2>Resources</h2>
+                            <ul>
+                                <li><a href="#">HTML Guide</a></li>
+                                <li><a href="#">CSS Tricks</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2>Follow</h2>
+                            <ul>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2>Legal</h2>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <span>© 2026 Neeraj Kumar. All rights reserved.</span>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
