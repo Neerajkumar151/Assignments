@@ -9,26 +9,26 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 10
-- Pending items: 10
-- Current focus date: 2026-04-14
+- Completed items: 14
+- Pending items: 6
+- Current focus date: 2026-04-15
 
 ## Progress Chart
 
 - Total tasks: 20
-- Completed: 10
-- Pending: 10
-- Completion: 50%
+- Completed: 14
+- Pending: 6
+- Completion: 70%
 
 ```text
-Progress: [██████████░░░░░░░░░░] 10/20 (50%)
+Progress: [██████████████░░░░░░] 14/20 (70%)
 ```
 
 ```mermaid
 pie showData
   title Assignment Progress (Out of 20)
-  "Completed" : 10
-  "Pending" : 10
+  "Completed" : 14
+  "Pending" : 6
 ```
 
 ## Date-wise Task Plan
@@ -91,7 +91,7 @@ pie showData
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_5
 
-### 2026-04-15 ⏳
+### 2026-04-15 ✅
 
 - Topic 6: CSS Layout Basics
   - display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow
@@ -99,7 +99,7 @@ pie showData
 - Assignment 6.1: Create a webpage with fixed header + scrollable content
   - Status: TODO
 
-### 2026-04-16 ⏳
+### 2026-04-15 ✅
 
 - Topic 7: Flexbox (Industry Must)
   - flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks
@@ -107,7 +107,7 @@ pie showData
 - Assignment 7.1: Build responsive card layout (3-4 cards) using Flexbox
   - Status: TODO
 
-### 2026-04-17 ⏳
+### 2026-04-16 ⏳
 
 - Topic 8: CSS Grid + Responsive Design
   - grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints
@@ -115,7 +115,7 @@ pie showData
 - Assignment 8.1: Create a responsive dashboard layout using Grid + media queries
   - Status: TODO
 
-### 2026-04-20 ⏳
+### 2026-04-17 ⏳
 
 - Topic 9: UI Components (Practical UI Dev)
   - Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes
@@ -123,7 +123,7 @@ pie showData
 - Assignment 9.1: Build a Landing Page UI (Navbar + Hero + Cards + Footer)
   - Status: TODO
 
-### 2026-04-21 ⏳
+### 2026-04-20 ⏳
 
 - Topic 10: Advanced CSS + Final Project
   - Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing
@@ -145,10 +145,10 @@ pie showData
 | 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done | 1. Header placement issue rest are fine |
 | 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
 | 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
-| 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 |  |  | TODO |  |
-| 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 |  |  | TODO |  |
-| 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-16 | 2026-04-16 |  |  | TODO |  |
-| 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-16 | 2026-04-16 |  |  | TODO |  |
+| 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 |  |  | Done |  |
+| 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 |  |  | Done |  |
+| 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 2026-04-15 | 2026-04-15 | Done |  |
+| 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 2026-04-15 | 2026-04-15 | Done |  |
 | 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
 | 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
 | 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
