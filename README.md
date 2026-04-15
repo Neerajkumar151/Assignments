@@ -95,17 +95,17 @@ pie showData
 
 - Topic 6: CSS Layout Basics
   - display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow
-  - Status: TODO
+  - Status: DONE
 - Assignment 6.1: Create a webpage with fixed header + scrollable content
-  - Status: TODO
+  - Status: DONE
 
 ### 2026-04-15 ✅
 
 - Topic 7: Flexbox (Industry Must)
   - flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks
-  - Status: TODO
+  - Status: DONE
 - Assignment 7.1: Build responsive card layout (3-4 cards) using Flexbox
-  - Status: TODO
+  - Status: DONE
 
 ### 2026-04-16 ⏳
 
@@ -145,10 +145,10 @@ pie showData
 | 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done | 1. Header placement issue rest are fine |
 | 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
 | 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
-| 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 |  |  | Done |  |
-| 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 |  |  | Done |  |
-| 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 2026-04-15 | 2026-04-15 | Done |  |
-| 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 2026-04-15 | 2026-04-15 | Done |  |
+| 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
+| 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
+| 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
+| 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
 | 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
 | 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
 | 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
