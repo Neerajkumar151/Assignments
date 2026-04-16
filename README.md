@@ -153,7 +153,7 @@ pie showData
 | 4 | Semantic HTML + SEO | Semantic tags (header, footer, section, article, nav), meta tags, alt attributes, favicon, accessibility basics | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done |  |
 | 4.1 | Semantic HTML + SEO | Assignment: Refactor previous pages into semantic HTML + add SEO tags | 2026-04-13 | 2026-04-13 | 13-04-2026 | 13-04-2026 | Done | 1. Header placement issue rest are fine |
 | 5 | CSS Fundamentals | CSS syntax, selectors (class/id/element), colors, units (px, %, rem, em), box model, margin/padding/border | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
-| 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done |  |
+| 5.1 | CSS Fundamentals | Assignment: Style Resume Page with proper spacing, colors, typography | 2026-04-14 | 2026-04-14 | 14-04-2026 | 14-04-2026 | Done | All implemented well just em use is missing |
 | 6 | CSS Layout Basics | display (block, inline, inline-block), position (relative, absolute, fixed), z-index, overflow | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
 | 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done | 1. Display concepts missing (block / inline / inline-block) |
 | 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
