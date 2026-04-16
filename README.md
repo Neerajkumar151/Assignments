@@ -9,26 +9,26 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 14
-- Pending items: 6
-- Current focus date: 2026-04-15
+- Completed items: 16
+- Pending items: 4
+- Current focus date: 2026-04-16
 
 ## Progress Chart
 
 - Total tasks: 20
-- Completed: 14
-- Pending: 6
-- Completion: 70%
+- Completed: 16
+- Pending: 4
+- Completion: 80%
 
 ```text
-Progress: [██████████████░░░░░░] 14/20 (70%)
+Progress: [████████████████░░░░] 16/20 (80%)
 ```
 
 ```mermaid
 pie showData
   title Assignment Progress (Out of 20)
-  "Completed" : 14
-  "Pending" : 6
+  "Completed" : 16
+  "Pending" : 4
 ```
 
 ## Date-wise Task Plan
@@ -109,13 +109,14 @@ pie showData
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_6_7
 
-### 2026-04-16 ⏳
+### 2026-04-16 ✅
 
 - Topic 8: CSS Grid + Responsive Design
   - grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints
-  - Status: TODO
+  - Status: DONE
 - Assignment 8.1: Create a responsive dashboard layout using Grid + media queries
-  - Status: TODO
+  - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_8
 
 ### 2026-04-17 ⏳
 
@@ -151,10 +152,9 @@ pie showData
 | 6.1 | CSS Layout Basics | Assignment: Create a webpage with fixed header + scrollable content | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
 | 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
 | 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
-| 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
-| 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 |  |  | TODO |  |
+| 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
+| 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
 | 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
 | 9.1 | UI Components (Practical UI Dev) | Assignment: Build a Landing Page UI (Navbar + Hero + Cards + Footer) | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
 | 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 |  |  | TODO |  |
 | 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 |  |  | TODO |  |
-
