@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Dashboard Grid Assignment</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --surface: #fffaf0;
+      --ink: #1f1f1f;
+      --muted: #5f5a52;
+      --line: #d8cfc2;
+      --accent: #cc6b2c;
+      --accent-2: #2f6f73;
+      --radius: 14px;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --font-title: Georgia, "Times New Roman", serif;
+      --font-body: "Trebuchet MS", Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background:
+        radial-gradient(circle at 0% 0%, #fff6dd 0%, transparent 35%),
+        radial-gradient(circle at 100% 100%, #d8f0ee 0%, transparent 36%),
+        var(--bg);
+      color: var(--ink);
+      padding: 16px;
+    }
+
+    /* mobile layout */
+    .dashboard {
+      min-height: 95vh;
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "nav"
+        "stats"
+        "main"
+        "activity"
+        "footer";
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+
+    .header {
+      grid-area: header;
+      background: linear-gradient(120deg, #f7ddc4, #f8f0d8);
+    }
+
+    .header h1 {
+      font-family: var(--font-title);
+      font-size: 1.6rem;
+      letter-spacing: 0.3px;
+    }
+
+    .header p {
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    .nav {
+      grid-area: nav;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 12px;
+      text-align: center;
+      background: #fff;
+      font-weight: 700;
+      color: var(--accent-2);
+    }
+
+    .stats {
+      grid-area: stats;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+
+    .stat {
+      border-radius: 12px;
+      padding: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .stat h3 {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .stat p {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .main {
+      grid-area: main;
+      min-height: 230px;
+      background:
+        linear-gradient(180deg, #ffffff 0%, #fff6ed 100%);
+    }
+
+    .main h2,
+    .activity h2 {
+      font-family: var(--font-title);
+      margin-bottom: 10px;
+    }
+
+    .activity {
+      grid-area: activity;
+    }
+
+    .activity ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .activity li {
+      padding: 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    /* breakpoint 1: tablet */
+    @media (min-width: 768px) {
+      .dashboard {
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+          "header header"
+          "nav stats"
+          "nav main"
+          "footer activity";
+      }
+
+      .nav {
+        grid-template-columns: 1fr;
+        align-content: start;
+      }
+
+      .stats {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* breakpoint 2: desktop */
+    @media (min-width: 1100px) {
+      .dashboard {
+        grid-template-columns: 240px 2.05fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+          "header header header"
+          "nav stats stats"
+          "nav main activity"
+          "footer footer footer";
+          column-gap: 20px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(3, minmax(140px, 1fr));
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <header class="card header">
+      <h1>Learning Dashboard</h1>
+      <p>Responsive dashboard layout using Grid + media queries</p>
+    </header>
+
+    <aside class="card nav">
+      <div class="pill">Overview</div>
+      <div class="pill">Tasks</div>
+      <div class="pill">Projects</div>
+      <div class="pill">Settings</div>
+    </aside>
+
+    <section class="stats">
+      <article class="stat">
+        <h3>Completed</h3>
+        <p>14</p>
+      </article>
+      <article class="stat">
+        <h3>Pending</h3>
+        <p>5</p>
+      </article>
+      <article class="stat">
+        <h3>Streak</h3>
+        <p>7 days</p>
+      </article>
+    </section>
+
+    <main class="card main">
+      <h2>Main Content</h2>
+      <p>This area can hold charts, cards, or assignment details.</p>
+    </main>
+
+    <section class="card activity">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>Submitted grid worksheet</li>
+        <li>Updated responsive navbar</li>
+        <li>Reviewed media query notes</li>
+      </ul>
+    </section>
+
+    <footer class="card footer">
+      Responsive dashboard using CSS Grid
+    </footer>
+  </div>
+</body>
+</html>
