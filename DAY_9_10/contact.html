@@ -14,10 +14,13 @@
     <div class="page">
         <header>
             <nav>
-                <div id="home"><a class="nav-link" href="index.html">Home</a></div>
-                <div id="services"><a class="nav-link" href="services.html">Services</a></div>
-                <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
-                <div id="contact"><a class="nav-link active" href="contact.html">Contact</a></div>
+                <div class="nav-left">
+                    <div id="home"><a class="nav-link" href="index.html">Home</a></div>
+                    <div id="services"><a class="nav-link" href="services.html">Services</a></div>
+                    <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
+                    <div id="contact"><a class="nav-link active" href="contact.html">Contact</a></div>
+                </div>
+                <a href="login.html" class="nav-login">Login</a>
             </nav>
         </header>
 
@@ -30,18 +33,35 @@
 
                 <div class="contact-wrap">
                     <div class="contact-card">
-                        <h3>Get in Touch</h3>
-                        <ul class="contact-list">
-                            <li><span>Email:</span> thakurneerajkumar17@gmail.com</li>
-                            <li><span>Phone:</span> +91 98765 43210</li>
-                            <li><span>Address:</span> Noida, India</li>
-                            <li><span>Feedback:</span></li>
-                            <li>
-                                <form action="">
-                                    <textarea style="display: block; padding: 10px; overflow: auto; line-height: 1.4rem; font-size: 1.1rem; width: 90%; margin: 0 auto;" name="message" id="message" rows="4" placeholder="Your Message"></textarea>
-                                </form>
-                            </li>
-                        </ul>
+                        <div class="contact-layout">
+                            <div class="contact-info">
+                                <h3>Get in Touch</h3>
+                                <ul class="contact-list">
+                                    <li><span>Email:</span> thakurneerajkumar17@gmail.com</li>
+                                    <li><span>Phone:</span> +91 98765 43210</li>
+                                    <li><span>Address:</span> Noida, India</li>
+                                </ul>
+                            </div>
+
+                            <form class="contact-form" aria-label="Contact form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn primary">Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

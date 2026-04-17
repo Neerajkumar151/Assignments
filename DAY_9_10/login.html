@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <div id="home"><a class="nav-link" href="index.html">Home</a></div>
+                    <div id="services"><a class="nav-link" href="services.html">Services</a></div>
+                    <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
+                    <div id="contact"><a class="nav-link" href="contact.html">Contact</a></div>
+                </div>
+                <a href="login.html" class="nav-login active">Login</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="auth-section">
+                <div class="auth-panel">
+                    <h1>Welcome back to your <span>digital workspace</span></h1>
+                    <p>Access your account to manage projects, review service updates, and stay connected with your technology partner from one secure dashboard.</p>
+
+                    <ul class="auth-features">
+                        <li><strong>Secure access:</strong> Sign in with your verified business email and protected credentials.</li>
+                        <li><strong>Project visibility:</strong> Track current engagements, milestones, and delivery updates in one place.</li>
+                        <li><strong>Fast support:</strong> Reach our team quickly for guidance, planning, and technical collaboration.</li>
+                    </ul>
+                </div>
+
+                <div class="auth-card">
+                    <h2>Login to your account</h2>
+                    <p>Enter your details below to continue.</p>
+
+                    <form class="auth-form" action="#">
+                        <div class="auth-grid">
+                            <div class="auth-field" style="grid-column: 1 / -1;">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="password-row">
+                            <div class="auth-field">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="auth-check" for="remember">
+                                <input type="checkbox" id="remember" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <button class="btn primary auth-submit" type="submit">Sign In</button>
+                        <button class="btn secondary auth-submit" type="button">Continue as Guest</button>
+                    </form>
+
+                    <div class="auth-switch">
+                        <span>New here? <a href="signup.html">Create an account</a></span>
+                    </div>
+
+                    <div class="auth-helper">
+                        <div class="service-card">
+                            <h3>Quick onboarding</h3>
+                            <p>Start conversations faster with a streamlined client access experience built for teams.</p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Reliable communication</h3>
+                            <p>Keep your updates, planning notes, and support touchpoints organized in one secure place.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

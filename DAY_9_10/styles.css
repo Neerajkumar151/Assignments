@@ -102,14 +102,37 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
+    gap: 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.nav-login {
+    padding: 10px 20px;
+    background: var(--gradient-button-primary);
+    color: var(--color-button-primary-text);
+    border-radius: var(--radius-button);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-button);
+}
+
+.nav-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(21, 145, 63, 0.35);
 }
 
 a {
@@ -377,6 +400,224 @@ main {
     color: var(--color-service-heading);
 }
 
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-service-heading);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-service-border);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-highlight);
+    box-shadow: 0 0 0 2px rgba(109, 180, 255, 0.2);
+}
+
+.contact-form button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.auth-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.auth-panel,
+.auth-card {
+    border-radius: 18px;
+    background: var(--gradient-service-section);
+    box-shadow: var(--shadow-card);
+}
+
+.auth-panel {
+    padding: 34px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-panel h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.08;
+    margin-bottom: 16px;
+}
+
+.auth-panel h1 span,
+.auth-switch a,
+.form-options a {
+    color: var(--color-highlight);
+}
+
+.auth-panel p {
+    font-size: 1.15rem;
+    max-width: 640px;
+    opacity: 0.9;
+}
+
+.auth-features {
+    list-style: none;
+    margin-top: 24px;
+    display: grid;
+    gap: 12px;
+}
+
+.auth-features li {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(235, 241, 250, 0.14);
+    border: 1px solid rgba(109, 180, 255, 0.18);
+    font-size: 1rem;
+}
+
+.auth-card {
+    padding: 28px 24px;
+    background: rgba(235, 241, 250, 0.94);
+    border: 1px solid var(--color-service-border);
+    color: var(--color-service-heading);
+}
+
+.auth-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    color: var(--color-service-text);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: grid;
+    gap: 16px;
+}
+
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.auth-field {
+    display: grid;
+    gap: 8px;
+}
+
+.auth-field label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-service-heading);
+}
+
+.auth-field input,
+.auth-field select,
+.auth-field textarea {
+    width: 100%;
+    border: 1px solid rgba(74, 119, 171, 0.32);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--color-service-heading);
+    background: rgba(255, 255, 255, 0.92);
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.auth-field input:focus,
+.auth-field select:focus,
+.auth-field textarea:focus {
+    border-color: #0c6cb6;
+    box-shadow: 0 0 0 4px rgba(12, 108, 182, 0.14);
+    transform: translateY(-1px);
+}
+
+.password-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.98rem;
+}
+
+.form-options label,
+.auth-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-service-text);
+    font-size: 0.98rem;
+}
+
+.auth-check input,
+.form-options input {
+    accent-color: #0c6cb6;
+}
+
+.auth-submit {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.auth-switch {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-service-text);
+}
+
+.auth-card .btn.secondary {
+    border: 1px solid rgba(74, 119, 171, 0.22);
+}
+
+.auth-helper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.auth-helper .service-card {
+    width: 100%;
+    padding: 18px;
+    min-height: 0;
+}
+
 .bot-container {
     position: fixed;
     bottom: 40px;
@@ -470,7 +711,6 @@ footer {
 .footer-container {
     width: 90%;
     margin: auto;
-    padding-right: 80px;
 }
 
 .footer-top {
@@ -554,6 +794,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .auth-grid,
+    .password-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .cards {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
     }
@@ -583,6 +828,10 @@ footer {
 }
 
 @media (min-width: 1100px) {
+    .auth-section {
+        grid-template-columns: 1.05fr 0.95fr;
+    }
+
     .cards {
         grid-template-columns: repeat(4, minmax(240px, 1fr));
     }
@@ -597,7 +846,26 @@ footer {
 }
 
 @media (max-width: 767px) {
-    nav,
+    nav {
+        /* flex-direction: column; */
+        gap: 5px;
+    }
+
+    .nav-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px 6px;
+        width: 100%;
+        margin-left: -40px;
+    }
+
+    .nav-login {
+        width: 80px;
+        text-align: center;
+        padding: 9px 11px;
+        margin-left: 8px;
+    }
+
     .footer-bottom {
         grid-template-columns: 1fr;
         justify-items: center;
