@@ -9,26 +9,26 @@ This repository tracks daily topics and assignments for HTML and CSS practice.
 
 ## Progress Snapshot
 
-- Completed items: 16
-- Pending items: 4
-- Current focus date: 2026-04-16
+- Completed items: 20
+- Pending items: 0
+- Current focus date: 2026-04-20
 
 ## Progress Chart
 
 - Total tasks: 20
-- Completed: 16
-- Pending: 4
-- Completion: 80%
+- Completed: 20
+- Pending: 0
+- Completion: 100%
 
 ```text
-Progress: [████████████████░░░░] 16/20 (80%)
+Progress: [████████████████████] 20/20 (100%)
 ```
 
 ```mermaid
 pie showData
   title Assignment Progress (Out of 20)
-  "Completed" : 16
-  "Pending" : 4
+  "Completed" : 20
+  "Pending" : 0
 ```
 
 ## Date-wise Task Plan
@@ -124,21 +124,23 @@ pie showData
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_8
 
-### 2026-04-17 ⏳
+### 2026-04-17 ✅
 
 - Topic 9: UI Components (Practical UI Dev)
   - Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes
-  - Status: TODO
+  - Status: DONE
 - Assignment 9.1: Build a Landing Page UI (Navbar + Hero + Cards + Footer)
-  - Status: TODO
+  - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_9_10
 
-### 2026-04-20 ⏳
+### 2026-04-20 ✅
 
 - Topic 10: Advanced CSS + Final Project
   - Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing
-  - Status: TODO
+  - Status: DONE
 - Assignment 10.1: Build a fully responsive website (Home + Contact Form + Components) using all concepts
-  - Status: TODO
+  - Status: DONE
+  - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_9_10
 
 ## Detailed Tracker Table
 
@@ -160,7 +162,7 @@ pie showData
 | 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done | 1. Display concepts missing (block / inline / inline-block) |
 | 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
 | 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
-| 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
-| 9.1 | UI Components (Practical UI Dev) | Assignment: Build a Landing Page UI (Navbar + Hero + Cards + Footer) | 2026-04-20 | 2026-04-20 |  |  | TODO |  |
-| 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 |  |  | TODO |  |
-| 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 |  |  | TODO |  |
+| 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
+| 9.1 | UI Components (Practical UI Dev) | Assignment: Build a Landing Page UI (Navbar + Hero + Cards + Footer) | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
+| 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done |  |
+| 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done |  |
