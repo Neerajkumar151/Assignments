@@ -123,6 +123,8 @@ pie showData
 - Assignment 8.1: Create a responsive dashboard layout using Grid + media queries
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_8
+  - Feedback:
+    - Tablet layout has weak UX hierarchy - Footer should always be last (Rest very good used Grid)
 
 ### 2026-04-17 ✅
 
@@ -161,7 +163,7 @@ pie showData
 | 7 | Flexbox (Industry Must) | flex container, flex items, justify-content, align-items, flex-wrap, gap, alignment tricks | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done |  |
 | 7.1 | Flexbox (Industry Must) | Assignment: Build responsive card layout (3-4 cards) using Flexbox | 2026-04-15 | 2026-04-15 | 15-04-2026 | 15-04-2026 | Done | 1. Display concepts missing (block / inline / inline-block) |
 | 8 | CSS Grid + Responsive Design | grid basics, grid-template-columns/rows, gap, layout structuring, media queries, breakpoints | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
-| 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done |  |
+| 8.1 | CSS Grid + Responsive Design | Assignment: Create a responsive dashboard layout using Grid + media queries | 2026-04-17 | 2026-04-17 | 16-04-2026 | 16-04-2026 | Done | 1. Tablet layout has weak UX hierarchy - Footer should always be last (Rest very good used Grid) |
 | 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
 | 9.1 | UI Components (Practical UI Dev) | Assignment: Build a Landing Page UI (Navbar + Hero + Cards + Footer) | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
 | 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done |  |
