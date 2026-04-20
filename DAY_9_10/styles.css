@@ -38,7 +38,7 @@
 
     --gradient-page: radial-gradient(circle at 50% 30%, var(--color-surface-mid) 0%, var(--color-surface-top) 45%, var(--color-surface-bottom) 100%);
     --gradient-header: linear-gradient(90deg, rgba(255, 255, 255, 0.88) 0%, rgba(225, 227, 228, 0.76) 45%, rgba(186, 195, 207, 0.88) 100%);
-    --gradient-button-primary: linear-gradient(135deg, #1e9b40 0%, #247e3a 100%);
+    --gradient-button-primary: linear-gradient(135deg, #799ecf 0%, #22387a 100%);
     --gradient-card-top-1: linear-gradient(135deg, #0c6cb6 0%, #0da3d7 100%);
     --gradient-card-top-2: linear-gradient(135deg, #1f8ac3 0%, #2cc6d9 100%);
     --gradient-card-top-3: linear-gradient(135deg, #4c87d8 0%, #3aa0ec 100%);
@@ -557,7 +557,7 @@ main {
 .auth-field textarea:focus {
     border-color: #0c6cb6;
     box-shadow: 0 0 0 4px rgba(12, 108, 182, 0.14);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .password-row {
@@ -586,7 +586,7 @@ main {
 
 .auth-check input,
 .form-options input {
-    accent-color: #0c6cb6;
+    accent-color: #032844;
 }
 
 .auth-submit {
