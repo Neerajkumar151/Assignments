@@ -36,6 +36,7 @@ The overall design direction is:
 - `signup.html`: Account creation form with terms acceptance
 - `privacy-policy.html`: Privacy content page
 - `terms.html`: Terms and conditions content page
+- `coming_soon.html`: Shared placeholder page for under-construction routes and temporary redirects
 - `styles.css`: Shared stylesheet for all pages
 - `bot.png`: Bot asset for floating assistant visuals
 
@@ -45,7 +46,7 @@ The overall design direction is:
 - Fixed top navigation for quick access to primary pages
 - Hero section with clear headline and two CTAs
 - Stats/feature cards shown in a responsive grid
-- Footer with grouped links and social icons
+- Footer with grouped links and social icons (currently redirected to `coming_soon.html`)
 - Bot container structure exists for future animated assistant UI
 
 ### 2) Services (`services.html`)
@@ -67,6 +68,7 @@ The overall design direction is:
   - Informational panel (benefits/features)
   - Authentication form panel
 - Includes remember-me option and helper cards
+- Forgot-password and guest flows currently redirect to `coming_soon.html`
 
 ### 6) Signup (`signup.html`)
 - Multi-field registration form
@@ -77,6 +79,11 @@ The overall design direction is:
 - Content-focused layout using existing section/card styles
 - Keeps legal pages consistent with brand appearance
 
+### 8) Placeholder Page (`coming_soon.html`)
+- Reusable under-construction page for unfinished destinations
+- Uses existing theme classes (`service-section`, `service-heading`, `btn`) for visual consistency
+- Includes a subtle animated card interaction and a direct "Back to Home" action
+
 ## Responsive Design: How It Works
 This project uses a mobile-first responsive strategy.
 Base styles are designed for smaller screens first, then enhanced for larger viewports.
@@ -84,8 +91,9 @@ Base styles are designed for smaller screens first, then enhanced for larger vie
 ### Breakpoints
 - Base (mobile): default styles (single-column grids)
 - `@media (min-width: 768px)`: tablet and small laptop improvements
-- `@media (min-width: 1100px)`: desktop wide layout expansion
+- `@media (min-width: 1280px)`: desktop wide layout expansion
 - `@media (max-width: 767px)`: mobile-specific navbar/footer adjustments
+- `@media (max-width: 489px)`: compact mobile navbar handling to reduce overlap on very small screens
 
 ### Examples of Responsive Behavior
 - Cards become:
@@ -95,6 +103,7 @@ Base styles are designed for smaller screens first, then enhanced for larger vie
 - Service and industry sections scale from 1 to 2 to 3 columns
 - Auth section changes from stacked layout to two-column split on large screens
 - Footer changes from stacked columns to multi-column desktop arrangement
+- On very small screens (<490px), nav spacing, sizing, and alignment are adjusted for better readability
 - Bot element size and position are reduced on mobile for better fit
 
 ## Grid Layout: Where and Why
@@ -162,7 +171,8 @@ Potential improvements for future:
 
 ## Current Limitations
 - Forms are currently static (`action="#"`) and not connected to backend
-- Login and forgot-password actions are placeholders
+- Authentication and contact flows are UI-only and do not submit to a backend service
+- Several non-core routes intentionally redirect to `coming_soon.html` as placeholders
 - Lottie script is included but the animated component is currently commented out
 - No build tooling or minification pipeline yet
 
@@ -179,4 +189,4 @@ This architecture is good for static multi-page websites and can scale by:
 4. Use browser responsive mode (mobile/tablet/desktop) to verify breakpoints.
 
 ## Summary
-DAY 9-10 demonstrates a complete responsive multi-page UI system using HTML + CSS with strong reuse, clear structure, and grid-first layout decisions. The project is organized for readability, easy extension, and practical real-world landing site patterns.
+DAY 9-10 demonstrates a complete responsive multi-page UI system using HTML + CSS with strong reuse, clear structure, and grid-first layout decisions. The project now also includes a shared placeholder route strategy (`coming_soon.html`) and an additional very-small-screen navbar breakpoint for improved mobile usability.
