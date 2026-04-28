@@ -143,6 +143,8 @@ pie showData
 - Assignment 10.1: Build a fully responsive website (Home + Contact Form + Components) using all concepts
   - Status: DONE
   - Repo link: https://github.com/Neerajkumar151/Assignments/tree/main/DAY_9_10
+  - Feedback:
+    - Responsiveness issue in small device for cards ,taking complete width,rest fine
 
 ## Detailed Tracker Table
 
@@ -167,4 +169,4 @@ pie showData
 | 9 | UI Components (Practical UI Dev) | Navbar, buttons, cards, forms styling, shadows, border-radius, hover effects, reusable utility classes | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
 | 9.1 | UI Components (Practical UI Dev) | Assignment: Build a Landing Page UI (Navbar + Hero + Cards + Footer) | 2026-04-20 | 2026-04-20 | 20-04-2026 | 20-04-2026 | Done |  |
 | 10 | Advanced CSS + Final Project | Transitions, animations, best practices, folder structure, code cleanup, responsiveness testing | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done |  |
-| 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done |  |
+| 10.1 | Advanced CSS + Final Project | Final Assignment: Build a fully responsive website (Home + Contact Form + Components) using all concepts | 2026-04-21 | 2026-04-21 | 20-04-2026 | 20-04-2026 | Done | 1. Responsiveness issue in small device for cards ,taking complete width,rest fine |
