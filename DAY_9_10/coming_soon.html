@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page">
-        <header>
-            <nav>
-                <div class="nav-left">
-                    <div><a class="nav-link" href="index.html">Home</a></div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-menu" id="primary-navigation">
+                    <div class="nav-left">
+                        <div id="home"><a class="nav-link" href="index.html">Home</a></div>
+                        <div id="services"><a class="nav-link" href="services.html">Services</a></div>
+                        <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
+                        <div id="contact"><a class="nav-link" href="contact.html">Contact</a></div>
+                    </div>
+                    <a href="login.html" class="nav-login">Login</a>
                     <div><a class="nav-link" href="services.html">Services</a></div>
-                    <div><a class="nav-link" href="industry.html">Industry</a></div>
                     <div><a class="nav-link" href="contact.html">Contact</a></div>
                 </div>
                 <a href="login.html" class="nav-login">Login</a>
@@ -42,5 +47,6 @@
             </section>
         </main>
     </div>
+    <script src="menu.js"></script>
 </body>
 </html>

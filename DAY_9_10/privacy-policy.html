@@ -14,18 +14,25 @@
     <div class="page">
         <header>
             <nav>
-                <div class="nav-left">
-                    <div id="home"><a class="nav-link" href="index.html">Home</a></div>
-                    <div id="services"><a class="nav-link" href="services.html">Services</a></div>
-                    <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
-                    <div id="contact"><a class="nav-link" href="contact.html">Contact</a></div>
+                
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-menu" id="primary-navigation">
+                    <div class="nav-left">
+                        <div id="home"><a class="nav-link" href="index.html">Home</a></div>
+                        <div id="services"><a class="nav-link" href="services.html">Services</a></div>
+                        <div id="industry"><a class="nav-link" href="industry.html">Industry</a></div>
+                        <div id="contact"><a class="nav-link" href="contact.html">Contact</a></div>
+                    </div>
+                    <a href="login.html" class="nav-login">Login</a>
                 </div>
-                <a href="login.html" class="nav-login">Login</a>
             </nav>
         </header>
 
         <main>
             <section class="contact-section">
+    <script src="menu.js"></script>
                 <div class="contact-heading">
                     <h2>Privacy <span>Policy</span></h2>
                     <p>This page explains how your information is collected, used, and protected.</p>

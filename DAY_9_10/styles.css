@@ -82,6 +82,8 @@ body::before {
 }
 
 .page {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(180deg, var(--color-overlay-soft) 0%, var(--color-overlay-strong) 100%);
 }
@@ -105,6 +107,50 @@ nav {
     max-width: 90%;
     margin: 0 auto;
     gap: 30px;
+}
+
+.nav-brand {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+}
+
+.nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--color-text-dark);
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.nav-toggle:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.nav-toggle:focus-visible {
+    outline: 3px solid rgba(12, 108, 182, 0.35);
+    outline-offset: 2px;
+}
+
+.nav-toggle i {
+    font-size: 1.15rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-left: auto;
 }
 
 .nav-left {
@@ -148,7 +194,8 @@ a {
 }
 
 main {
-    padding: 132px 20px 64px;
+    flex: 1;
+    padding: 120px 20px 64px;
 }
 
 .hero {
@@ -273,7 +320,7 @@ main {
 .service-section,
 .industry-section,
 .contact-section {
-    margin: 80px auto 0;
+    margin: 10px auto 0;
     max-width: 1300px;
     padding: 42px 24px 50px;
     border-radius: 18px;
@@ -668,6 +715,7 @@ footer {
     color: var(--color-footer-text);
     padding: 40px 20px;
     font-family: var(--font-primary);
+    margin-top: auto;
 }
 
 .footer-container {
@@ -804,37 +852,78 @@ footer {
 
     .industry-wrap {
         grid-template-columns: repeat(3, minmax(280px, 1fr));
-    }
+}
 }
 
 @media (max-width: 767px) {
     nav {
-        gap: 5px;
+        flex-wrap: wrap;
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .nav-brand {
+        font-size: 0.95rem;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 14px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-menu.is-open {
+        display: flex;
     }
 
     .nav-left {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 8px 4px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
         width: 100%;
     }
 
+    .nav-left > div {
+        display: flex;
+    }
+
+    .nav-link,
     .nav-login {
-        width: 80px;
+        width: 100%;
         text-align: center;
-        padding: 9px 11px;
-        margin-left: 8px;
     }
 
-    .service-section{
+    .nav-link {
+        padding: 10px 8px;
+        font-size: 1rem;
+    }
+
+    .nav-login {
+        padding: 10px 12px;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .service-section {
         margin-top: 0;
     }
 
-    .industry-section{
+    .industry-section {
         margin-top: 0;
     }
 
-    .contact-section{
+    .contact-section {
         margin-top: 0;
     }
 
@@ -871,6 +960,7 @@ footer {
     }
 
     .industry-card,
+
     .contact-card {
         height: auto;
         min-height: 200px;
@@ -883,41 +973,24 @@ footer {
     }
 
     nav {
-        max-width: 100%;
-        flex-direction: column;
-        align-items: stretch;
         gap: 10px;
     }
 
+    .nav-menu {
+        padding: 12px;
+    }
+
     .nav-left {
-        width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 8px;
+        grid-template-columns: 1fr;
     }
 
-    .nav-left > div {
-        display: flex;
-    }
-
-    .nav-link {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 0.95rem;
-        padding: 8px 6px;
-        white-space: nowrap;
-    }
-
+    .nav-link,
     .nav-login {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-        padding: 10px 12px;
         font-size: 0.95rem;
     }
 
     main {
-        padding-top: 190px;
+        padding-top: 170px;
     }
 }
