@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industry</title>
+    <title>Nexora - Industry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-bg" aria-hidden="true">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="a2.mp4" type="video/mp4">
+            Your browser does not support the background video.
+        </video>
+    </div>
     <div class="page">
         <header>
             <nav>
+                <a href="index.html" class="nav-brand">Nexora</a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -38,18 +45,171 @@
 
                 <div class="industry-wrap">
                     <div class="industry-card">
-                        <h3>Healthcare</h3>
-                        <p>Patient-focused software and secure healthcare workflow tools.</p>
+                        <div class="card-img-top">
+                            <img src="ind_health.png" alt="Healthcare Technology">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Healthcare</h3>
+                            <p>Patient-focused software and secure healthcare workflow tools.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Healthcare Solutions</h4>
+                            <ul>
+                                <li>HIPAA Compliant Architecture</li>
+                                <li>Telemedicine Integration</li>
+                                <li>Patient Data Platforms</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
                     </div>
+
                     <div class="industry-card">
-                        <h3>Finance</h3>
-                        <p>Reliable systems for fintech, payments, and reporting.</p>
+                        <div class="card-img-top">
+                            <img src="ind_finance.png" alt="Fintech Solutions">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Finance</h3>
+                            <p>Reliable systems for fintech, payments, and reporting.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Financial Solutions</h4>
+                            <ul>
+                                <li>High-Frequency Trading</li>
+                                <li>Secure Payment Gateways</li>
+                                <li>Blockchain & Crypto</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
                     </div>
+
                     <div class="industry-card">
-                        <h3>Retail</h3>
-                        <p>Digital commerce solutions for better customer engagement.</p>
+                        <div class="card-img-top">
+                            <img src="ind_retail.png" alt="Retail & E-commerce">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Retail</h3>
+                            <p>Digital commerce solutions for better customer engagement.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Retail Solutions</h4>
+                            <ul>
+                                <li>E-Commerce Platforms</li>
+                                <li>Inventory Management</li>
+                                <li>Omnichannel Experiences</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="card-img-top">
+                            <img src="ind_edu.png" alt="EdTech Solutions">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Education</h3>
+                            <p>E-learning platforms and intuitive student management systems.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Education Solutions</h4>
+                            <ul>
+                                <li>Virtual Classrooms</li>
+                                <li>LMS Development</li>
+                                <li>Student Portals</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="card-img-top">
+                            <img src="ind_real.png" alt="PropTech Solutions">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Real Estate</h3>
+                            <p>Property management software and virtual tour integrations.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Real Estate Solutions</h4>
+                            <ul>
+                                <li>Property MLS Integration</li>
+                                <li>Virtual 3D Tours</li>
+                                <li>Brokerage CRM</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="card-img-top">
+                            <img src="ind_logistics.png" alt="Logistics Technology">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3>Logistics</h3>
+                            <p>Supply chain tracking and automated delivery routing systems.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Logistics Solutions</h4>
+                            <ul>
+                                <li>Supply Chain Analytics</li>
+                                <li>Route Optimization</li>
+                                <li>Warehouse Management</li>
+                            </ul>
+                            <a href="contact.html">Explore Capabilities →</a>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="case-studies-section">
+                <div class="industry-heading">
+                    <h2>Featured <span>Case Studies</span></h2>
+                    <p>Discover how we've helped leading brands solve complex technical challenges.</p>
+                </div>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="img-container">
+                            <div class="bg-img bg-global"></div>
+                            <div class="tag">Logistics</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Global Supply Chain Optimization</h3>
+                            <p>We built a predictive analytics platform that reduced delivery delays by 35% across a network of 40+ countries.</p>
+                            <a href="contact.html">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="img-container">
+                            <div class="bg-img bg-culture"></div>
+                            <div class="tag">Finance</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>High-Frequency Trading Dashboard</h3>
+                            <p>Developed a real-time data visualization tool processing millions of transactions per second with zero latency.</p>
+                            <a href="contact.html">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="img-container">
+                            <div class="bg-img bg-delivery"></div>
+                            <div class="tag">Healthcare</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Telehealth Portal Overhaul</h3>
+                            <p>Re-architected a legacy healthcare app to support HIPAA-compliant video consultations for over 500k patients.</p>
+                            <a href="contact.html">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cta-section">
+                <h2>Innovate in Your Industry</h2>
+                <p>Our engineers are ready to build solutions tailored specifically to your market's unique demands.</p>
+                <a href="contact.html">Speak with a Specialist</a>
+            </section>
             </section>
         </main>
 
@@ -57,8 +217,8 @@
             <div class="footer-container">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="bmw-logo">
-                        <span>Neeraj Kumar</span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="Nexora Logo">
+                        <span>Nexora</span>
                     </div>
 
                     <div class="footer-columns">
@@ -89,7 +249,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <span>© 2026 Neeraj Kumar. All rights reserved.</span>
+                    <span>© 2026 Nexora. All rights reserved.</span>
                     <div class="footer-icons">
                         <a href="coming_soon.html"><i class="fab fa-facebook-f"></i></a>
                         <a href="coming_soon.html"><i class="fab fa-discord"></i></a>

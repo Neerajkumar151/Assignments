@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Nexora - Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-bg" aria-hidden="true">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="a2.mp4" type="video/mp4">
+            Your browser does not support the background video.
+        </video>
+    </div>
     <div class="page">
         <header>
             <nav>
-                
+                <a href="index.html" class="nav-brand">Nexora</a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -40,69 +46,198 @@
 
                 <div class="service-wrap">
                     <div class="service-card">
-                        <h3>Custom Software Development</h3>
-                        <p>Tailored solutions built from the ground up to meet your unique business needs.</p>
-                        <ul class="service-list">
-                            <li>Web Applications</li>
-                            <li>Mobile Apps</li>
-                            <li>API Development</li>
-                            <li>System Integration</li>
-                        </ul>
+                        <div class="card-img-top">
+                            <img src="card_experience.png" alt="Software Development">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">Enterprise</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> 3-6 Months</span>
+                            </div>
+                            <h3>Custom Software Development</h3>
+                            <p>Tailored enterprise software built from the ground up. We deliver robust backend systems, intuitive frontends, and scalable architectures.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Web Applications</li>
+                                <li>Mobile Apps</li>
+                                <li>API Development</li>
+                                <li>System Integration</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <h3>Mobile App Development</h3>
-                        <p>High-performance mobile applications built for usability, scalability, and engagement.</p>
-                        <ul class="service-list">
-                            <li>Native iOS and Android Apps</li>
-                            <li>Cross-platform Solutions</li>
-                            <li>UI/UX for Mobile</li>
-                            <li>App Store Deployment</li>
-                        </ul>
+                        <div class="card-img-top">
+                            <img src="card_mobile.png" alt="Mobile App Development">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">Consumer</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> 2-4 Months</span>
+                            </div>
+                            <h3>Mobile App Development</h3>
+                            <p>High-performance native and cross-platform mobile applications engineered for seamless user engagement across iOS and Android.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Native iOS and Android Apps</li>
+                                <li>Cross-platform Solutions</li>
+                                <li>UI/UX for Mobile</li>
+                                <li>App Store Deployment</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <h3>API and System Integration</h3>
-                        <p>Seamless connectivity between tools and platforms to ensure optimized operations.</p>
-                        <ul class="service-list">
-                            <li>Third-party API Integration</li>
-                            <li>Custom API Development</li>
-                            <li>Legacy System Integration</li>
-                            <li>Workflow Automation</li>
-                        </ul>
+                        <div class="card-img-top">
+                            <img src="card_api.png" alt="API Integration">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">B2B Integration</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> 1-3 Months</span>
+                            </div>
+                            <h3>API and System Integration</h3>
+                            <p>Seamless connectivity between your tools and platforms. We optimize operations through custom middleware and API integrations.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Third-party API Integration</li>
+                                <li>Custom API Development</li>
+                                <li>Legacy System Integration</li>
+                                <li>Workflow Automation</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <h3>AI and Machine Learning</h3>
-                        <p>Intelligent solutions that automate processes and provide valuable insights.</p>
-                        <ul class="service-list">
-                            <li>Predictive Analytics</li>
-                            <li>NLP</li>
-                            <li>Computer Vision</li>
-                            <li>Automation</li>
-                        </ul>
+                        <div class="card-img-top">
+                            <img src="card_ai.png" alt="AI and Machine Learning">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">Innovation</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> 4-8 Months</span>
+                            </div>
+                            <h3>AI and Machine Learning</h3>
+                            <p>Intelligent solutions that automate workflows, predict key trends, and deliver deep insights using custom machine learning models.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Predictive Analytics</li>
+                                <li>NLP</li>
+                                <li>Computer Vision</li>
+                                <li>Automation</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <h3>Data Analytics</h3>
-                        <p>Transform raw data into actionable insights for better business decision making.</p>
-                        <ul class="service-list">
-                            <li>Data Visualization</li>
-                            <li>Business Intelligence</li>
-                            <li>Reporting</li>
-                            <li>Dashboards</li>
-                        </ul>
+                        <div class="card-img-top">
+                            <img src="card_data.png" alt="Data Analytics">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">Business Intel</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> 2-5 Months</span>
+                            </div>
+                            <h3>Data Analytics</h3>
+                            <p>Transform raw data into actionable intelligence with custom dashboards built to empower faster, data-driven decisions.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Data Visualization</li>
+                                <li>Business Intelligence</li>
+                                <li>Reporting</li>
+                                <li>Dashboards</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
                     </div>
 
                     <div class="service-card">
-                        <h3>Support and Maintenance</h3>
-                        <p>Proactive support to keep your systems secure, updated, and performing.</p>
-                        <ul class="service-list">
-                            <li>Bug Fixes and Issue Resolution</li>
-                            <li>Performance Optimization</li>
-                            <li>Security Patching</li>
-                            <li>Continuous Monitoring</li>
+                        <div class="card-img-top">
+                            <img src="card_delivery.png" alt="Support and Maintenance">
+                        </div>
+                        <div class="card-content-bottom">
+                            <div class="card-meta">
+                                <span class="tag">Retainer</span>
+                                <span class="meta-info"><i class="fa-solid fa-clock"></i> Ongoing</span>
+                            </div>
+                            <h3>Support and Maintenance</h3>
+                            <p>Proactive, 24/7 technical support keeping your critical systems secure, updated, and performing at their absolute peak.</p>
+                        </div>
+                        <div class="card-overlay">
+                            <h4>Capabilities</h4>
+                            <ul class="service-list">
+                                <li>Bug Fixes and Issue Resolution</li>
+                                <li>Performance Optimization</li>
+                                <li>Security Patching</li>
+                                <li>Continuous Monitoring</li>
+                            </ul>
+                            <a href="contact.html">Discuss Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="process-section">
+                <div class="service-heading">
+                    <h2>Our <span>Delivery Process</span></h2>
+                    <p>A proven, transparent methodology that ensures your project is delivered on time, on budget, and to the highest standards.</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <h3>Discovery</h3>
+                        <p>We deeply understand your business goals, technical constraints, and target audience to formulate a winning strategy.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <h3>Architecture & Design</h3>
+                        <p>Our experts craft scalable technical architectures and intuitive user interfaces tailored to your specific requirements.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <h3>Development</h3>
+                        <p>Agile sprints deliver functional software increments regularly, ensuring transparency and flexibility.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <h3>Launch & Support</h3>
+                        <p>Rigorous testing precedes deployment, followed by continuous monitoring and 24/7 technical support.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="why-us-section">
+                <div class="why-us-grid">
+                    <div>
+                        <h2 class="section-title mb-20">Why Partner With <span>Us?</span></h2>
+                        <p class="why-us-desc">We go beyond standard vendor relationships. We act as an extension of your team, deeply invested in your long-term success.</p>
+                        <ul class="why-us-list">
+                            <li class="why-us-item"><i class="fa-solid fa-check"></i> Direct access to senior engineering talent</li>
+                            <li class="why-us-item"><i class="fa-solid fa-check"></i> Transparent pricing and clear deliverables</li>
+                            <li class="why-us-item"><i class="fa-solid fa-check"></i> Focus on security and compliance standards</li>
+                            <li class="why-us-item"><i class="fa-solid fa-check"></i> Agile methodology adapting to your needs</li>
                         </ul>
+                        <div class="why-us-btn-wrapper">
+                            <a href="contact.html" class="btn primary">Discuss Your Next Project</a>
+                        </div>
+                    </div>
+                    <div class="why-us-img-wrapper">
+                        <img src="card_experience.png" alt="Engineering Excellence" class="why-us-img">
                     </div>
                 </div>
             </section>
@@ -112,8 +247,8 @@
             <div class="footer-container">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="bmw-logo">
-                        <span>Neeraj Kumar</span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="Nexora Logo">
+                        <span>Nexora</span>
                     </div>
 
                     <div class="footer-columns">
@@ -144,7 +279,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <span>© 2026 Neeraj Kumar. All rights reserved.</span>
+                    <span>© 2026 Nexora. All rights reserved.</span>
                     <div class="footer-icons">
                         <a href="coming_soon.html"><i class="fab fa-facebook-f"></i></a>
                         <a href="coming_soon.html"><i class="fab fa-discord"></i></a>

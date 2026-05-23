@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Innovation Landing Page</title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Nexora - Digital Innovation Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-bg" aria-hidden="true">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="a2.mp4" type="video/mp4">
+            Your browser does not support the background video.
+        </video>
+    </div>
     <div class="page">
         <header>
             <nav>
+                <a href="index.html" class="nav-brand">Nexora</a>
                 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -32,70 +38,154 @@
 
         <main>
             <section id="home-section" class="hero">
-                <h1>Transform your business with <span>digital innovation</span></h1>
-                <p>We deliver exceptional software solutions, digital transformation services, and technology consulting to help your business scale and succeed.</p>
+                <div class="hero-badge">✨ Redefining the Digital Landscape</div>
+                <h1>Elevate Your Vision Through <span>Next-Gen Solutions</span></h1>
+                <p>Empowering forward-thinking enterprises with cutting-edge software engineering, transformative technology strategies, and scalable architectures that drive exponential growth.</p>
 
                 <div class="actions">
-                    <a href="contact.html"><button class="btn primary">Get a free Consultation</button></a>
-                    <a href="coming_soon.html"><button class="btn secondary">Our Expertise</button></a>
+                    <a href="contact.html"><button class="btn primary">Start Your Journey <i class="fa-solid fa-arrow-right"></i></button></a>
+                    <a href="coming_soon.html"><button class="btn secondary">Explore Capabilities</button></a>
                 </div>
             </section>
 
             <section class="cards">
                 <div class="card card-1">
-                    <div class="card-top" aria-hidden="true">💡</div>
+                    <div class="card-glow"></div>
+                    <div class="card-top" aria-hidden="true"><img src="card_experience.png" alt="Experience" class="card-img"></div>
                     <div class="card-content">
-                        <h3>20+ Years Team Experience</h3>
-                        <p>Team Experience</p>
+                        <div class="card-tag">Experience</div>
+                        <h3>Decades of Mastery</h3>
+                        <p>Leveraging 20+ years of deep engineering expertise to solve complex challenges.</p>
                     </div>
                 </div>
 
                 <div class="card card-2">
-                    <div class="card-top" aria-hidden="true">🏙️</div>
+                    <div class="card-glow"></div>
+                    <div class="card-top" aria-hidden="true"><img src="card_global.png" alt="Global Reach" class="card-img"></div>
                     <div class="card-content">
-                        <h3>6+ Industries Served</h3>
-                        <p>Industries Served</p>
+                        <div class="card-tag">Global Reach</div>
+                        <h3>Industry Agnostic</h3>
+                        <p>Driving transformation across 6+ major global industries with tailored solutions.</p>
                     </div>
                 </div>
 
                 <div class="card card-3">
-                    <div class="card-top" aria-hidden="true">🚀</div>
+                    <div class="card-glow"></div>
+                    <div class="card-top" aria-hidden="true"><img src="card_culture.png" alt="Elite Culture" class="card-img"></div>
                     <div class="card-content">
-                        <h3>Fast-Growing Strong Engineering Culture</h3>
-                        <p>Strong Engineering Culture</p>
+                        <div class="card-tag">Culture</div>
+                        <h3>Elite Engineering</h3>
+                        <p>Fostering a fast-growing, innovative culture that attracts top-tier technical talent.</p>
                     </div>
                 </div>
 
                 <div class="card card-4">
-                    <div class="card-top" aria-hidden="true">⏱️</div>
+                    <div class="card-glow"></div>
+                    <div class="card-top" aria-hidden="true"><img src="card_delivery.png" alt="Delivery" class="card-img"></div>
                     <div class="card-content">
-                        <h3>100% On Time Delivery Commitment</h3>
-                        <p>On Time Delivery</p>
+                        <div class="card-tag">Commitment</div>
+                        <h3>Flawless Execution</h3>
+                        <p>100% commitment to on-time delivery without compromising on quality or performance.</p>
                     </div>
                 </div>
             </section>
 
-            <div class="bot-container">
-                <!-- <div class="cloud-bubble">
-                    Hi Everyone! 👋
-                </div> -->
-                <!-- <lottie-player
-                    src="https://assets10.lottiefiles.com/packages/lf20_2glqweqs.json"
-                    background="transparent"
-                    speed="1"
-                    style="width: 40vw; height: 40vh; margin-top: 20px;"
-                    loop
-                    autoplay>
-                </lottie-player> -->
-            </div>
+            <section class="ai-approach">
+                <div class="ai-approach-grid">
+                    <div class="text-center">
+                        <img src="floating_bot.png" alt="AI Assistant" class="ai-approach-img">
+                    </div>
+                    <div>
+                        <div class="hero-badge ai-badge">AI-First Approach</div>
+                        <h2 class="section-title mb-20">Supercharged by <span>Intelligence</span></h2>
+                        <p class="section-desc">We leverage the latest in AI and machine learning to accelerate development cycles, optimize code quality, and deliver intelligent solutions that give your business a competitive edge. Meet your new digital workforce.</p>
+                        <a href="services.html" class="btn-secondary-custom">Explore AI Services <i class="fa-solid fa-robot"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="trusted-partners">
+                <h3>Trusted by Global Innovators</h3>
+                <div class="partners-logos">
+                    <i class="fa-brands fa-aws fa-3x"></i>
+                    <i class="fa-brands fa-microsoft fa-3x"></i>
+                    <i class="fa-brands fa-google fa-3x"></i>
+                    <i class="fa-brands fa-apple fa-3x"></i>
+                    <i class="fa-brands fa-meta fa-3x"></i>
+                </div>
+            </section>
+
+            <section class="about-stats">
+                <div class="about-stats-container">
+                    <div>
+                        <div class="hero-badge philosophy-badge">Our Philosophy</div>
+                        <h2 class="section-title mb-20">Building the Future, <span>Line by Line</span></h2>
+                        <p class="about-desc">We don't just write code; we architect solutions that drive tangible business value. Our approach combines cutting-edge technology with deep industry insights to deliver platforms that scale beautifully and perform flawlessly.</p>
+                        <a href="services.html" class="link-with-icon">Learn about our process <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>500+</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>98%</h3>
+                            <p>Client Retention</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>120+</h3>
+                            <p>Expert Engineers</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Global Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="testimonials-heading">
+                    <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left fa-2x"></i></div>
+                        <p class="testimonial-text">"Their team transformed our legacy systems into a modern, highly scalable microservices architecture. The performance gains were immediate and massive."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <h4 class="testimonial-author-name">Sarah Jenkins</h4>
+                                <p class="testimonial-author-title">CTO, FinTech Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left fa-2x"></i></div>
+                        <p class="testimonial-text">"We needed an AI solution delivered on an impossible timeline. Not only did they hit the deadline, but the model accuracy exceeded our expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <div>
+                                <h4 class="testimonial-author-name">Michael Chen</h4>
+                                <p class="testimonial-author-title">VP Engineering, HealthCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Schedule a free consultation with our experts and discover how we can help you achieve your digital goals.</p>
+                <a href="contact.html">Get Started Today</a>
+            </section>
         </main>
 
         <footer>
             <div class="footer-container">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="bmw-logo">
-                        <span>Neeraj Kumar</span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-bmw.svg" alt="Nexora Logo">
+                        <span>Nexora</span>
                     </div>
 
                     <div class="footer-columns">
@@ -126,7 +216,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <span>© 2026 Neeraj Kumar. All rights reserved.</span>
+                    <span>© 2026 Nexora. All rights reserved.</span>
                     <div class="footer-icons">
                         <a href="coming_soon.html"><i class="fab fa-facebook-f"></i></a>
                         <a href="coming_soon.html"><i class="fab fa-discord"></i></a>
@@ -138,7 +228,6 @@
             </div>
         </footer>
     </div>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>
